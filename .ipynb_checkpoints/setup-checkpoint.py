@@ -11,7 +11,7 @@ setup(
     description="A collection of Speech Recognition Exercises in Python",
     license = "free",
     
-    packages = ['utils','session3'],
+    packages = ['spchlab'],
     py_modules = [],
     # a dictionary refering to required data not in .py files
     package_data = {},
