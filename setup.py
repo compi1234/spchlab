@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="spchlab",
-    version="0.0.1",
+    version="0.0.2",
     url="https://github.com/compi1234/spchlab",
 
     author="Dirk Van Compernolle",
@@ -11,7 +11,7 @@ setup(
     description="A collection of Speech Recognition Exercises in Python",
     license = "free",
     
-    packages = ['spchlab'],
+    packages = ['spchutils'],
     py_modules = [],
     # a dictionary refering to required data not in .py files
     package_data = {},
