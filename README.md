@@ -1,2 +1,2 @@
 # spchlab
-Global Repository for speech oriented exercise sessions
+Global Repository for Speech Recognition Exercises in Python
