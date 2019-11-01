@@ -9,7 +9,7 @@
 #- target: classification labels (possibly multi-class)
 #- ...
 #
-import numpy as np
+
 import pandas as pd
 from sklearn.datasets.base import Bunch
 
@@ -145,32 +145,8 @@ def fetch_hillenbrand(genders='adults',vowels=[],features=['f0','F1','F2','F3'],
     # STEP 4: Select data and unpack for desired output format
     target = hildata.loc[indx,targets].values
     data = hildata.loc[indx,features].values
-    
 
     if return_X_y:
         return (data,target)
     else:
         return Bunch(data=data,target=target, target_names=targets, feature_names=features)
-    
-    
-    ###############################################################
-# create a simple  
-def make_selection(dataset,feature_list=['f0'],target_list=['gid'],class_names=None):
-    '''
-    The make_selection() module allows further subset selection on 
-    already loaded data according to columns in the data and targets
-    the target return is a list of integers according to sequence in class_names
-    '''
-    feat_indices =  [ dataset.feature_names.index(ft) for ft in feature_list ]
-    target_indices =  [ dataset.target_names.index(t) for t in target_list ]
-    X = dataset.data[:,feat_indices]
-    y_names = dataset.target[:,target_indices].ravel()
-    if class_names == None:
-        class_names = np.unique(y_names)
-    y = np.zeros(len(y_names),dtype=int)
-    for k in range(0,len(class_names)):
-        y[y_names == class_names[k]] = k
-
-    return(X,y)
-##################################################################
-    

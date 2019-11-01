@@ -82,53 +82,24 @@ class gmmclassifier():
         for k in range(0,self.n_classes) :
             ksel = [y[i] == classes[k] for i in range(n_samples)]
             XX = X[ksel,:]
-            self.gmm[k].fit(XX,y[ksel])
+            self.gmm[k].fit(X[ksel],y[ksel])
 #            print("Model for class: ",self.gmm[k].means_,np.sqrt(self.gmm[k].covariances_))
         
         
-    def predict(self,X,priors=None,posteriors=False):
+    def predict(self,X):
             """Predict using the linear model
     
             Parameters
             ----------
             X : {array-like}, shape (n_samples, n_features)
     
-            posteriors:  if True print all posteriors
-            
             Returns
             -------
             array, shape (n_samples,)
                Predicted target values per element in X.
-
-            array, shape (n_samples, n_classes)        
-            """
-            class_likelihoods = self.predict_prob(X)
-            nsamples = X.shape[0]
-            total_likelihood = np.zeros(nsamples)
-            class_posteriors = np.zeros((nsamples,self.n_classes))
-            for k in range(0,self.n_classes):
-                total_likelihood += class_likelihoods[:,k]
-            for k in range(0,self.n_classes):
-                for i in range(0,nsamples):
-                    class_posteriors[i,k] = class_likelihoods[i,k] / total_likelihood[i]
-                
-#            if( priors == None ):
-#                class_posteriors = class_posteriors / float(self.n_classes)
-
-                
-            prediction = np.zeros((nsamples,),dtype=int)
-            for i in range(0,nsamples):
-                pmax = class_posteriors[i,0]
-                for k in range(1,self.n_classes):
-                    if class_posteriors[i,k] > pmax:
-                        pmax = class_posteriors[i,k]
-                        prediction[i] = k
-                        
-            if(posteriors):
-                return prediction, class_posteriors
-            else:
-                return prediction
-            
+        
+        """
+        
     def predict_prob(self,X):
         """ Posterior Probability estimates per class
         
@@ -144,7 +115,8 @@ class gmmclassifier():
 #        Tprob = np.zeros(dtype='float64',shape=(X.shape[0],))
         for k in range(0,self.n_classes):
             Xprob[:,k]= np.exp(self.gmm[k].score_samples(X))
-#            Tprob += Xprob[:,k]           
+#            Tprob += Xprob[:,k]
+            
         return Xprob
             
     def print(self):
