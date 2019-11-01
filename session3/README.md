@@ -22,7 +22,8 @@ This exercise should be run in [Google Colab](https://colab.research.google.com/
 * In your browser, click on <exercise_name>.ipynb on the Github page. Once the notebook has opened, click on 'Open in Colab' at the top of the file.
 * When you try to run one of the cells, you will get a warning about the fact that the notebook is not authored by Google. Make sure that you tick the box 'Reset all runtimes before running' and then click on 'Run anyway'. It will ask for confirmation, so click 'yes'.
 
-**** IMPORTANT NOTE ****  Make sure that in the second cell,  the environment variable is set to COLAB, such that the correct packages get installed and can be loaded !!
+**** IMPORTANT NOTE ****  Make sure that in the first cell,  the environment variable is set to COLAB, such that the correct packages can get installed and loaded !!
+If you want a full working environment on your PC, make sure to download the spchlab/spchutils package and just import it; for this you then set the environment variable to ''.
 
 
 ## Notes on Notebooks, Python, sklearn, spchutils,  ...
