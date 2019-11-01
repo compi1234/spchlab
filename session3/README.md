@@ -19,7 +19,7 @@ There are three parts to the exercise:
 This exercise should be run in [Google Colab](https://colab.research.google.com/). Google Colab is a collabarative workspace in the cloud giving researchers easy access to GPUs.
 
 * To be able to use Google Colab, you need to have a Google account. If you have one, make sure you are logged in. 
-* In your browser, click on <exercise_name>.ipynb on the Github page. Once the notebook has opened, click on 'Open in Colab' at the top of the file.
+* In your browser, click on <exercise_name>.ipynb on the Github page. Once the notebook has opened, click on 'Open in Colab' at the top of the file. [<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>]
 * When you try to run one of the cells, you will get a warning about the fact that the notebook is not authored by Google. Make sure that you tick the box 'Reset all runtimes before running' and then click on 'Run anyway'. It will ask for confirmation, so click 'yes'.
 
 **** IMPORTANT NOTE ****  Make sure that in the first cell,  the environment variable is set to COLAB, such that the correct packages can get installed and loaded !!
