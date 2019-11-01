@@ -9,9 +9,9 @@ Within this exercise we make use of the "Generative, Bayesian" Framework in whic
 The different aspects of the work involved are: data processing, data exploration, data modeling, building the classifier, testing the classifier.
 
 There are three parts to the exercise:
-- [Hillenbrand1]  Gender Classification with Pitch as Feature
-- [Hillenbrand2]  Vowel Classification with Formant Features
-- [TIMIT1]        Vowel Classification from a single frame of MELSPEC or MELFBANK features
+- [Hillenbrand-1]  Gender Classification with Pitch as Feature
+- [Hillenbrand-2]  Vowel Classification with Formant Features
+- [TIMIT-1]        Vowel Classification from a single frame of MELSPEC or MELFBANK features
 
 
 ## Getting Started with Google Colab
