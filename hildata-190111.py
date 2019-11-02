@@ -1,12 +1,25 @@
+# Hillenbrand Database 
 #
+#The function load_hillenbrand() loads the database in a similar way as the databases supported by the sklearn load_datasets.
+#However, there are arguments that lets one select parts of the database for further use.
+#The subset selection is specified by the arguments  (genders, vowels, features, targets)
+#
+#The output is provided in a Bunch object with following parameters
+#- data: raw data for selected features
+#- target: classification labels (possibly multi-class)
+#- ...
+#
+import numpy as np
 import pandas as pd
+from sklearn.datasets.base import Bunch
+
     
-def fetch_hillenbrand(genders='adults',vowels='all',columns=['gid','vid','f0','F1','F2','F3'],Debug=False):
+def fetch_hillenbrand(genders='adults',vowels=[],features=['f0','F1','F2','F3'],targets=[],Debug=False,return_X_y=False):
 
     '''
-    The function load_hillenbrand() loads the Hillenbrand dataset into a panda's datastructure.
-    There are extra arguments that allow for a subset selection of the database (genders, vowels)
-    The returned columns need to be specified by the columnns argument.
+    The function load_hillenbrand() loads the Hillenbrand dataset in a similar way as the datasets in sklearn.
+    There are extra arguments that lets one select parts of the database for further use.
+    The subset selection is specified by the arguments  (genders, vowels, features, targets)
 
     The Hillenbrand dataset is a 1995 repeat and extension of the classic Peterson-Barney(1953) experiment
     in which Formants are established as compact and highly discriminative features for vowel recognition
@@ -33,20 +46,21 @@ def fetch_hillenbrand(genders='adults',vowels='all',columns=['gid','vid','f0','F
    
     Parameters
     ----------
-        genders:  list of selected genders  (default='adults', also possible: 'children', 'male', 'female' )
-        vowels:   list of selected vowels   (default='all', also possible 'vowels6', 'vowels3' )
-        columns:  list of selected columns  (default= ['gid',vid','f0','F1','F2','F3'])
+        genders:  list of selected genders  (default=all)
+        vowels:   list of selected vowels   (default=all)
+        features: list of selected features (default=['f0','F1','F2','F3'])
+        targets:  list of targets to be returned (default ['vid','gid'])
+        Return_X_y:   False(def == return as Bunch) , True (return as (X,y) tuple )
         Debug:    False(def) or True
         
     Returns
     -------
-        pandas DataFrame
-        
-    Note for sklearn users
-    ----------------------
-    to convert to a (X,y) structure for sklearn, select as follows, e.g.
-        y = hildata.loc[:,'vid']           (second argumnet is a single specification)
-        X = hildata.loc[:,['F1','F2']]     (second argumnet is a LIST of specifiers)
+        data : Bunch
+        Dictionary-like object, with attributes:
+            'data', the data to learn, 
+            'target', the classification labels,
+            'target_names', the meaning of the columns in target
+            'feature_names', the meaning of the features
     
     '''
     
@@ -59,16 +73,17 @@ def fetch_hillenbrand(genders='adults',vowels='all',columns=['gid','vid','f0','F
     # print(hildata.index)
     #
     hil_filepath = 'http://homes.esat.kuleuven.be/~spchlab/datasets/hillenbrand/vowdata.csv'    
-    hildata = pd.read_csv(hil_filepath)        
+    hildata = pd.read_csv(hil_filepath,index_col=0)        
 
     allgenders = list(hildata['gid'].unique())
     allvowels = list(hildata['vid'].unique())
-    allcolumns = list(hildata.columns.values)
+    allfeatures = list(hildata.columns[3:].values)
+    alltargets = ['vid','gid','sid']
     if(Debug):
         print(hildata.head())
         print('Genders(%3d) :' % len(allgenders),type(allgenders),allgenders)
         print('Vowels(%3d)  :' % len(allvowels),type(allvowels),allvowels)
-        print('Columns(%3d):' % len(allcolumns),type(allcolumns),allcolumns) 
+        print('Features(%3d):' % len(allfeatures),type(allfeatures),allfeatures) 
         
     # STEP 2: select the appropriate data records
     #############################################
@@ -108,6 +123,17 @@ def fetch_hillenbrand(genders='adults',vowels='all',columns=['gid','vid','f0','F
         print("load_hillenbrand(): VOWEL List Error")
         return
     
+    if(len(features) ==0):
+        features = allfeatures
+    if not set(features) <= set(allfeatures):
+        print("load_hillenbrand(): FEATURE List Error")
+        return
+    
+    if(len(targets) == 0):
+        targets = ['vid','gid']
+    if not set(targets) <= set(alltargets):
+        print("load_hillenbrand(): TARGET List Error")
+        return
          
     indx = hildata['gid'].isin(genders) & hildata['vid'].isin(vowels)
     if(Debug):
@@ -117,15 +143,34 @@ def fetch_hillenbrand(genders='adults',vowels='all',columns=['gid','vid','f0','F
         print(indx.values)
         
     # STEP 4: Select data and unpack for desired output format
-    hildf = hildata.loc[indx,columns]
+    target = hildata.loc[indx,targets].values
+    data = hildata.loc[indx,features].values
+    
+
+    if return_X_y:
+        return (data,target)
+    else:
+        return Bunch(data=data,target=target, target_names=targets, feature_names=features)
     
     
-    return(hildf)
+    ###############################################################
+# create a simple  
+def make_selection(dataset,feature_list=['f0'],target_list=['gid'],class_names=None):
+    '''
+    The make_selection() module allows further subset selection on 
+    already loaded data according to columns in the data and targets
+    the target return is a list of integers according to sequence in class_names
+    '''
+    feat_indices =  [ dataset.feature_names.index(ft) for ft in feature_list ]
+    target_indices =  [ dataset.target_names.index(t) for t in target_list ]
+    X = dataset.data[:,feat_indices]
+    y_names = dataset.target[:,target_indices].ravel()
+    if class_names == None:
+        class_names = np.unique(y_names)
+    y = np.zeros(len(y_names),dtype=int)
+    for k in range(0,len(class_names)):
+        y[y_names == class_names[k]] = k
 
-
-
-
-
-
-
+    return(X,y)
+##################################################################
     
