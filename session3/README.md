@@ -22,8 +22,8 @@ This exercise should be run in [Google Colab](https://colab.research.google.com/
 * In your browser, click on <exercise_name>.ipynb on the Github page. Once the notebook has opened, click on   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>   at the top of the file.
 * When you try to run one of the cells, you will get a warning about the fact that the notebook is not authored by Google. Make sure that you tick the box 'Reset all runtimes before running' and then click on 'Run anyway'. It will ask for confirmation, so click 'yes'.
 
-**** IMPORTANT NOTE ****  Make sure that in the first cell,  the environment variable is set to COLAB, such that the correct packages can get installed and loaded !!
-If you want a full working environment on your PC, make sure to download the spchlab/spchutils package and just import it; for this you then set the environment variable to ''.
+**** IMPORTANT NOTE ****  
+If you want to run this notebook outside the Google Colab environment, e.g. on your own PC,  make sure to download the spchlab/spchutils package and install it, see how it is done in Colab in the first cell'.
 
 
 ## Notes on Notebooks, Python, sklearn, spchutils,  ...
@@ -35,6 +35,7 @@ Our notebook contains Python code. Most of the code (with the explanation) will 
 * Python uses indexing starting at 0
 * The import statement defines packages and parts thereof for you current program
 * Python is object oriented. 
-* sklearn is Python's basic Machine Learning package.  For this exercise we have expanded sklearn with a class 'GaussianMixtureClass', which does Bayesian Classification involving Gaussian Mixtures and we will load this from the 'spchutils' package.  This is automatically done for you at the beginning of the notebook.
+* sklearn is Python's basic Machine Learning package.  
+* spchutils is a small local package this is used for this exercise. It contains the IO routines for the data we use. It also contains a class 'GaussianMixtureClf', which does Bayesian Classification with Gaussian Mixture modeling.  
 
 
