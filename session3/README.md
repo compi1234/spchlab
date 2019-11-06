@@ -1,12 +1,12 @@
-# Classification in Speech Recognition
+# Bayesian Classification and GMMs in Speech Recognition
 
-This is a Jupyter Notebook on Classification for the course [Speech Recognition](https://onderwijsaanbod.kuleuven.be/syllabi/e/H02A6AE.htm#activetab=doelstellingen_idp33776) (Master Artificial Intelligence) at KU Leuven.
+This is a collection Jupyter Notebooks on Classification for the course [Speech Recognition](https://onderwijsaanbod.kuleuven.be/syllabi/e/H02A6AE.htm#activetab=doelstellingen_idp33776) (Master Artificial Intelligence) at KU Leuven.
 
 ## Goals of the exercise
 
-These exercises develops a set of different classifiers.
-Within this exercise we make use of the "Generative, Bayesian" Framework in which the data is modeled  by a Gaussian  Mixture.
-The different aspects of the work involved are: data processing, data exploration, data modeling, building the classifier, testing the classifier.
+Within this exercise we make use of the "Generative, Bayesian" Framework in which the data is modeled  by a Gaussian  Mixture.  (For a very brief refresh read ./BayesGMM.md or check the course notes http://homes.esat.kuleuven.be/~compi/H02A6/course_notes/html/ch3_classification )
+Aspects of the work involved are: data processing, data exploration, data modeling, building the classifier, testing the classifier.
+The different exercises all make use of the same paradigm and apply it to gradually more complex situations by increasing the dimensionality of the featuresand increasing the number of classes.
 
 There are three parts to the exercise:
 - [Hillenbrand-1]  Gender Classification with Pitch as Feature
