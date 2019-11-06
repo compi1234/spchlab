@@ -1,14 +1,16 @@
-# Classification in Speech Recognition
+# Bayesian Classification and GMMs in Speech Recognition
 
-This is a Jupyter Notebook on Classification for the course [Speech Recognition](https://onderwijsaanbod.kuleuven.be/syllabi/e/H02A6AE.htm#activetab=doelstellingen_idp33776) (Master Artificial Intelligence) at KU Leuven.
+This is a collection Jupyter Notebooks on Classification for the course [Speech Recognition](https://onderwijsaanbod.kuleuven.be/syllabi/e/H02A6AE.htm#activetab=doelstellingen_idp33776) (Master Artificial Intelligence) at KU Leuven.
 
 ## Goals of the exercise
 
-These exercises develops a set of different classifiers.
-Within this exercise we make use of the "Generative, Bayesian" Framework in which the data is modeled  by a Gaussian  Mixture.
-The different aspects of the work involved are: data processing, data exploration, data modeling, building the classifier, testing the classifier.
+Within this exercise we make use of the "Generative, Bayesian" Framework in which the data is modeled  by a Gaussian  Mixture. (For course notes on this topic, see  http://homes.esat.kuleuven.be/~compi/H02A6/course_notes/html/ch3_classification )
+The different exercises all make use of the same paradigm and apply it to gradually more complex situations by increasing the dimensionality of the featuresand increasing the number of classes.
 
-There are three parts to the exercise:
+The work involves: data processing, data exploration, data modeling, building the classifier, testing the classifier.
+
+In this folder you find 4 notebooks:
+- [BayesGMM]       A very brief refresh on Bayes formula and GMMs (skip if you know it)
 - [Hillenbrand-1]  Gender Classification with Pitch as Feature
 - [Hillenbrand-2]  Vowel Classification with Formant Features
 - [TIMIT-1]        Vowel Classification from a single frame of MELSPEC or MELFBANK features
@@ -22,8 +24,8 @@ This exercise should be run in [Google Colab](https://colab.research.google.com/
 * In your browser, click on <exercise_name>.ipynb on the Github page. Once the notebook has opened, click on   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>   at the top of the file.
 * When you try to run one of the cells, you will get a warning about the fact that the notebook is not authored by Google. Make sure that you tick the box 'Reset all runtimes before running' and then click on 'Run anyway'. It will ask for confirmation, so click 'yes'.
 
-**** IMPORTANT NOTE ****  Make sure that in the first cell,  the environment variable is set to COLAB, such that the correct packages can get installed and loaded !!
-If you want a full working environment on your PC, make sure to download the spchlab/spchutils package and just import it; for this you then set the environment variable to ''.
+**** IMPORTANT NOTE ****  
+If you want to run this notebook outside the Google Colab environment, e.g. on your own PC,  make sure to download the spchlab/spchutils package and install it, see how it is done in Colab in the first cell'.
 
 
 ## Notes on Notebooks, Python, sklearn, spchutils,  ...
@@ -35,6 +37,7 @@ Our notebook contains Python code. Most of the code (with the explanation) will 
 * Python uses indexing starting at 0
 * The import statement defines packages and parts thereof for you current program
 * Python is object oriented. 
-* sklearn is Python's basic Machine Learning package.  For this exercise we have expanded sklearn with a class 'GaussianMixtureClass', which does Bayesian Classification involving Gaussian Mixtures and we will load this from the 'spchutils' package.  This is automatically done for you at the beginning of the notebook.
+* sklearn is Python's basic Machine Learning package.  
+* spchutils is a small local package this is used for this exercise. It contains the IO routines for the data we use. It also contains a class 'GaussianMixtureClf', which does Bayesian Classification with Gaussian Mixture modeling.  
 
 
