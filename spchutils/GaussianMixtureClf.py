@@ -36,7 +36,7 @@ class GaussianMixtureClf(BaseEstimator, ClassifierMixin):
     
     
     """   
-    def __init__(self, priors=None, n_components=1 ,classes=[0,1], max_iter=10, tol=1.e-3):
+    def __init__(self, n_components=1 ,classes=[0,1], max_iter=10, tol=1.e-3):
         self.n_components = n_components
         self.max_iter = max_iter
         self.tol = tol
