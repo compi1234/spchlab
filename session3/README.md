@@ -13,7 +13,7 @@ In this folder you find 4 notebooks:
 - [BayesGMM]       A very brief refresh on Bayes formula and GMMs (skip if you know it)
 - [Hillenbrand-1]  Gender Classification with Pitch as Feature
 - [Hillenbrand-2]  Vowel Classification with Formant Features
-- [TIMIT-1]        Vowel Classification from a single frame of MELSPEC or MELFBANK features
+- [TIMIT-1]        Vowel Classification from a single frame with FBANK or MFCC features
 
 
 ## Getting Started with Google Colab
@@ -21,12 +21,12 @@ In this folder you find 4 notebooks:
 This exercise should be run in [Google Colab](https://colab.research.google.com/). Google Colab is a collabarative workspace in the cloud giving researchers easy access to GPUs.
 
 * To be able to use Google Colab, you need to have a Google account. If you have one, make sure you are logged in. 
-* In your browser, click on <exercise_name>.ipynb on the Github page. Once the notebook has opened, click on   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>   at the top of the file.
+* In your browser, click on <exercise_name>.ipynb on the Github page. Once the notebook has opened, click on   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>   at the top of the file.  [see also note2 !!]
 * When you try to run one of the cells, you will get a warning about the fact that the notebook is not authored by Google. Make sure that you tick the box 'Reset all runtimes before running' and then click on 'Run anyway'. It will ask for confirmation, so click 'yes'.
 
-**** IMPORTANT NOTE ****  
-If you want to run this notebook outside the Google Colab environment, e.g. on your own PC,  make sure to download the spchlab/spchutils package and install it, see how it is done in Colab in the first cell'.
-
+**** IMPORTANT NOTES ****  
+1. If you want to run this notebook outside the Google Colab environment, e.g. on your own PC,  make sure to download the spchlab/spchutils package and install it, see how it is done in Colab in the first cell'.
+2. github has intermittent problems with opening python notebooks in a browser; sometimes it works, sometimes it doesn't ; the problem is old but has resurfaced recently.  If it doesn't open the first time, it probably will the second, third, ... time. Alternatively open Google Colab and open the github from there. 
 
 ## Notes on Notebooks, Python, sklearn, spchutils,  ...
 
