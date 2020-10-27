@@ -1,0 +1,8 @@
+#! /bin/bash -f
+#
+# trim original files to 10 seconds
+#
+for f in  Psnger22 pmiracle pwhite 
+do
+	sox $f.wav $f-short.wav trim 4.4 6.0
+done
