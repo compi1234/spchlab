@@ -2,16 +2,16 @@ from setuptools import setup, find_packages
 
 setup(
     name="spchlab",
-    version="0.0.2.dev",
+    version="0.2.0.dev",
     url="https://github.com/compi1234/spchlab",
 
     author="Dirk Van Compernolle",
     author_email="compi@esat.kuleuven.be",
 
-    description="{\em spchlab} contains a Collection of Speech Recognition Exercises in Python",
+    description="{\em spchlab}",
     license = "free",
     
-    packages = ['spchutils'],
+    packages = ['spchutils','tstpkg'],
     py_modules = [],
     # a dictionary refering to required data not in .py files
     package_data = {},
@@ -19,8 +19,8 @@ setup(
     install_requires=['numpy','pandas','matplotlib'],
 
     classifiers=['Development Status: Pure Development',
-                 'Programming Language :: Python :: 3.5',
-                 'Programming Language :: Python :: 3.6'],
+                 'Programming Language :: Python :: 3.7',
+                 'Programming Language :: Python :: 3.8'],
                  
     include_package_data=True
 
