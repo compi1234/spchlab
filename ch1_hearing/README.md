@@ -1,48 +1,57 @@
 # CH1: HEARING
-Exercises and Demos on Hearing in Jupyter Notebooks
-
 - For Questions and Issues with Jupyter, Google Colab, Python ... cfr. README.md in the main directory
-- For these exercises you need a properly working audio device.  Using good quality headphones is advised.
-- [slides](https://homes.esat.kuleuven.be/~spchlab/H02A6/slides/ch1/index.html)
+- For the exercises you need a properly working audio device.  Using good quality headphones is advised.
 
-## Exercise 1: Loudness
+## Lecture Notes
+- [lecture notes in .html](https://homes.esat.kuleuven.be/~spchlab/H02A6/lectures/ch1_html/index.html)
+- [lecture notes in .pdf](https://homes.esat.kuleuven.be/~spchlab/H02A6/lectures/ch1.pdf)
+
+## Exercises
+### Exercise 1: Loudness
 
 - Notebook: AuditoryDemonstrations.ipynb
-- Demo: Demo4 (from IPO Auditory Demonstrations CD)
+- Demo: Demo4
+- Reference: IPO Auditory Demonstrations CD (Demo4)
 
 
-## Exercise 2: Pitch
+### Exercise 2: Pitch
 
 - Notebook: Keyboard.ipynb
 
 ![Piano Keyboard](88_key_piano.png)
 
-## Exercise 3: Frequency Sensitivity of Human Hearing
+### Exercise 3: Frequency Sensitivity of Human Hearing
 
 - Notebook: AuditoryDemonstrations.ipynb
-- Demo: Demo6 (from IPO Auditory Demonstrations CD)  
+- Demo: Demo6
+- Reference: IPO Auditory Demonstrations CD (Demo6)
 
-<img src="Fletcher_Munson.jpg" alt="Equal Loudness Curves" style="height: 400px"></img>
+<img src="Fletcher_Munson.jpg" alt="Equal Loudness Curves" style="height: 250px"></img>
 
-## Exercise 4: Effect of Spectrum on Timbre
-
-- Notebook: AuditoryDemonstrations.ipynb
-- Demo: Demo4 (from IPO Auditory Demonstrations CD)
-
-## Exercise 5: Effect of Tone Envelope on Timbre
+### Exercise 4: Effect of Spectrum on Timbre
 
 - Notebook: AuditoryDemonstrations.ipynb
-- Demo: Demo4 (from IPO Auditory Demonstrations CD)
+- Demo: Demo28
+- Reference: IPO Auditory Demonstrations CD (Demo28))
 
-## Exercise 6: Effect of Echoes
+### Exercise 5: Effect of Tone Envelope on Timbre
 
 - Notebook: AuditoryDemonstrations.ipynb
-- Demo: Demo4 (from IPO Auditory Demonstrations CD)
+- Demo: Demo29
+- Reference: IPO Auditory Demonstrations CD(Demo29)
 
-## Exercise 7: Pitch and Timbre of Harmonic Signals
+### Exercise 6: Effect of Echoes
+
+- Notebook: AuditoryDemonstrations.ipynb
+- Demo: Demo35
+- Reference: IPO Auditory Demonstrations CD (Demo35)
+
+### Exercise 7: Pitch and Timbre of Harmonic Signals
 
 - Notebook: HarmonicSignals.ipynb
-
-## Exercise 8: Pitch and Rhythm
-
-- Notebook: HarmonicSignals.ipynb
+- Exercises:
+  + Fourier Synthesis of a Square Wave
+  + Spectral Envelope and Timbre
+  + Pitch and Rhythm
+  + Tone Envelope effects
+  + Missing Fundamental
