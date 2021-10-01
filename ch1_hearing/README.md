@@ -1,6 +1,5 @@
 # CH1: HEARING
-- For Questions and Issues with Jupyter, Google Colab, Python ... cfr. README.md in the main directory
-- For the exercises you need a properly working audio device.  Using good quality headphones is advised.
+For the exercises and demos you need a properly working audio device.  Using good quality headphones is advised.
 
 ## Lecture Notes
 - [lecture notes in .html](https://homes.esat.kuleuven.be/~spchlab/H02A6/lectures/ch1_html/index.html)
@@ -51,7 +50,12 @@
 - Notebook: HarmonicSignals.ipynb
 - Exercises:
   + Fourier Synthesis of a Square Wave
-  + Spectral Envelope and Timbre
+  + Controlling Pitch and Timbre with Fundamental Frequency and Spectral Envelope
+
+### Exercise 8: Harmonic Signals: digging deeper
+
+- Notebook: HarmonicSignals.ipynb
+- Exercises:
   + Pitch and Rhythm
   + Tone Envelope effects
   + Missing Fundamental
