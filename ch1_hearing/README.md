@@ -14,4 +14,4 @@ Exercises and Demos on Hearing in Jupyter Notebooks
 
 - Notebook: Keybooard.ipynb
 <img
-<img src="88_key_piano.png" alt="Piano Keyboard" style="height: 100px; width:100px;"/>
+<img src="88_key_piano.png" alt="Piano Keyboard"/>
