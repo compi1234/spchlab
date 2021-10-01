@@ -3,7 +3,7 @@ Exercises and Demos on Hearing in Jupyter Notebooks
 
 - For Questions and Issues with Jupyter, Google Colab, Python ... cfr. README.md in the main directory
 - For these exercises you need a properly working audio device.  Using good quality headphones is advised.
-- [slides](homes.esat.kuleuven.be/~spchlab/H02A6/slides/ch1/index.html)
+- [slides](https://homes.esat.kuleuven.be/~spchlab/H02A6/slides/ch1/index.html)
 
 ## Exercise 1: Loudness
 
