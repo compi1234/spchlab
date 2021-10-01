@@ -3,7 +3,7 @@ Exercises and Demos on Hearing in Jupyter Notebooks
 
 - For Questions and Issues with Jupyter, Google Colab, Python ... cfr. README.md in the main directory
 - For these exercises you need a properly working audio device.  Using good quality headphones is advised.
-- [slides](ch1_slides/index.html)
+- [slides](homes.esat.kuleuven.be/~spchlab/H02A6/slides/ch1/index.html)
 
 ## Exercise 1: Loudness
 
@@ -14,13 +14,15 @@ Exercises and Demos on Hearing in Jupyter Notebooks
 ## Exercise 2: Pitch
 
 - Notebook: Keyboard.ipynb
-<img src="88_key_piano.png" alt="Piano Keyboard"></img>
+
+![Piano Keyboard](88_key_piano.png)
 
 ## Exercise 3: Frequency Sensitivity of Human Hearing
 
 - Notebook: AuditoryDemonstrations.ipynb
-- Demo: Demo6 (from IPO Auditory Demonstrations CD)
-<img src="Fletcher_Munson.jpg" alt="Equal Loudness Curves"></img>
+- Demo: Demo6 (from IPO Auditory Demonstrations CD)  
+
+<img src="Fletcher_Munson.jpg" alt="Equal Loudness Curves" style="height: 400px"></img>
 
 ## Exercise 4: Effect of Spectrum on Timbre
 
