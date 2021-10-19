@@ -15,9 +15,6 @@ The different exercises all make use of the same paradigm and apply it to gradua
 The work involves: data processing, data exploration, data modeling, building the classifier, testing the classifier.
 
 
-
-
-
 In this folder you find 4 notebooks:
 - [BayesGMM]        A very brief refresh on Bayes formula and GMMs (skip if you know it)
 
