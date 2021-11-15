@@ -33,15 +33,19 @@ When you try to run one of the cells, you may get a warning about the fact that 
 
 ## Running the notebooks on your own PC
 
-If you want to run this notebook outside the Google Colab environment, e.g. on your own PC,  make sure to install the **pyspch** package (available in github/compi1234/pyspch).  
+If you want to run these notebooks outside the Google Colab environment, e.g. on your own PC,  make sure to install the **pyspch** package (available in github/compi1234/pyspch).  
 
 Dependencies:
 + pyspch expects Python >= 3.6
 + Have a look at the requirements to see that there are no conflicts with other installations.
++ A python 3.7 environment definition file is available in extras/py37.yml  (not including pytorch!)
++ Some notebooks require pytorch
+    - look at https://pytorch.org/get-started/locally/  for installation instructions for pytorch and its dependencies
 + The notebooks have been tested on Windows, MacOS and GoogleColab so we expect them to be rather robust
 + One of the most difficult issues to support in a machine independent way is audio, we did our best ... but it is frustrating to fight the poor level of audio standardization (also influenced by security concerns):
-  - good example: the Audio HTML widget in IPython (Notebooks) behaves different in Google Colab than in any other modern installation
+  - good example: the Audio HTML widget in IPython (Notebooks) behaves differently in Google Colab than in any other modern installation
 + Some notebooks were tested on binder, but not in a systematic way
+
 
 ## What do you need to know about Python ?
 
