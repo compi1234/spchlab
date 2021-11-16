@@ -22,6 +22,20 @@ TIMIT is used in 2 setups:
 
 - phone recognition: in recognition mode we recognize phone sequences .  Typically this is done using a phone bigram model as extra knowledge source but without lexicons, language models, etc. and as such it can still be seen as a pure acoustic recognizer
 
+##### PHONE SET
+
+The original TIMIT transcriptions were made with detailed phonetic labels using a 61 symbol set.
+This symbol set is rarely used today.  We typically collapse to 48 symbols and often even to 39.
+The 39 symbol set is almost equivalent to the CMU alphabet which is the more commonly used in speech recognition today.
+
+
+##### THE DATA SETS
+
+TIMIT comes with standard train/test set divisions
+
+- training: 462 speakers, 3696 sentences, 3.14 hrs
+- core test set: 24 speakers, 192 sentences, 0.16 hrs
+- full test set: 168 speakers, 1344 sentences, 0.81 hrs
 
 
 ##### TINYTIMIT
