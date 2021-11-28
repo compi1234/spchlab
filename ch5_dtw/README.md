@@ -13,8 +13,9 @@ The purpose of these exercises is to get hands on experience with the basic prin
 The exercises are very simple but do involve quite a few - extremely simple - computations.   
 We strongly believe that doing these exercises BY HAND without any help from any computer implementations helps full understanding.
 
+- [a short recap of the theory](https://homes.esat.kuleuven.be/~spchlab/H02A6/lab/session4/dtw_ex1_slides.pdf)
+- [the exercises](https://homes.esat.kuleuven.be/~spchlab/H02A6/lab/session4/dtw_ex1_questions.pdf)
+
 Afterwards we will provide you with Jupyter notebooks that can handle these and more complex problems.
 
 
-- [a short recap of the theory](dtw_ex1_slides.pdf)
-- [the exercises](dtw_ex1_questions.pdf)

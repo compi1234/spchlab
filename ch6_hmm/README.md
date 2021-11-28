@@ -20,13 +20,8 @@ Doing these BY HAND will help you in understanding how the problem gets manageab
 trellis computations.   Doing backtracking also shows how crucial it is to have this forward-backward setup to get to the optimal probabilities and
 alginments.
 
+(https://homes.esat.kuleuven.be/~spchlab/H02A6/lab/session4/hmm_ex1.pdf)
 
-exercises are very simple but do involve quite a few - extremely simple - computations.   
-We strongly believe that doing these exercises BY HAND without any help from any computer implementations helps full understanding.
-
-Afterwards we will provide you with Jupyter notebooks that can handle these and more complex problems.
-
-- [slides for exerrcise 1](hmm1_ex1.pdf)
 
 
 ## Exercise2 - Computing with Decision Trees
