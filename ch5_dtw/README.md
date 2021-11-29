@@ -16,6 +16,6 @@ We strongly believe that doing these exercises BY HAND without any help from any
 - [a short recap of the theory](https://homes.esat.kuleuven.be/~spchlab/H02A6/lab/session4/dtw_ex1_slides.pdf)
 - [the exercises](https://homes.esat.kuleuven.be/~spchlab/H02A6/lab/session4/dtw_ex1_questions.pdf)
 
-Afterwards we will provide you with Jupyter notebooks that can handle these and more complex problems.
+A Jupyter notebook that can handle these and more complex problems is in ex_dtw1.ipynb
 
 
