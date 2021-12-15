@@ -21,11 +21,7 @@ This notebook contains Python code. Most of the code (with the explanation) will
 
 Dependencies (as of 12/12/2020):
 
-- rnn_lm.ipynb (current version)
+- rnn_lm.ipynb 
   + Python 3.6 or above  (current standard in Colab)
   + Tensorflow V1.0  still supported by Colab, but will be deprecated at some point
 
-
-- rnn_lm_py27.ipynb (legacy code)
-  + Python 2.7    this will NOT run in COLAB anymore, but could be handy if your local machine still runs Python 2
-  + Tensorflow V1.0
