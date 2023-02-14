@@ -1,14 +1,10 @@
-# CH0: INTRODUCTION
+## Miscellaneous Demonstrations
 
-## Lecture Notes
-- [lecture notes in .html](https://homes.esat.kuleuven.be/~spchlab/H02A6/lectures/ch0_html/index.html)
-- [lecture notes in .pdf](https://homes.esat.kuleuven.be/~spchlab/H02A6/lectures/ch0.pdf)
-
-## Demonstrations
-
-### Demo 1: Transcriptions
+### Demo 1: Speech Transcriptions
 
 - Notebook: Transcriptions.ipynb
+
+This notebook gives a gentle introduction to various transcription levels of speech : phoneme, grapheme, syllable, word
 
 ### Demo 2: Speech Recognition in a Nutshell
 
