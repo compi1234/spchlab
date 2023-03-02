@@ -1,4 +1,4 @@
-#  JUPYTER NOTEBOOKS on SOURCE FILTER MODEL of SPEECH
+#  JUPYTER NOTEBOOKS on SOURCE FILTER MODEL of SPEECH, PITCH and FORMANTS
 
 
 ## Background
@@ -20,18 +20,16 @@ In these exercises we explore formants and pitch in a number of different ways:
 For parts (ii) and (iii) we make use of the Hillenbrand database, i.e. a database with human annotations of pitch and formants,
 i.e. people who had analysis tools as in (i) to their disposition.
 
-1. **Formants_Pitch.ipynb**
+1. **PitchFormant_Analysis.ipynb**
 
     + Exercise 1: find pitch and formants from a prerecorded sample
-    + Exercise 2: find pitch and formants from your own voice
 
-
-2. **Pitch_Gender.ipynb**
+2. **Pitch_Statistics.ipynb**
 
     + Make histogram of pitch values and compare distributions wrt gender
 
 
-3. **Formant_Triangle.ipynb**
+3. **Formant_Statistics.ipynb**
 
     + Make scatterplots of F1-F2 formant values
     + Do this for increasing number of vowels and see confusion growing

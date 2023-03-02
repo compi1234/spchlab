@@ -25,15 +25,13 @@ A spectrogram is a time-frequency representation. It sounds generic, but differe
 Discover for yourself the Heisenberg uncertainty principle of spectral analysis.  At the same time find those parameters that best aligns
 the spectrographic view with perception in general.     
 
-3. **Spectrograms_speech.ipynb** : 
+3. **Mel_Spectrogram.ipynb** : 
 
     + Exercise 1: Mel Spectrogram
-    + Exercise 2: Pitch and Formants of Human speech
 
 These exercises focus on properties of **human** speech and hearing.  
 The mel spectrogram is especially adapted to the frequency scale of the human ear.   
-Pitch and Formants are important properties of human speech that are very robust against background noise and spectral distortions.
-They relate directly to the source-filter model of human speech production.
+Some things look similar, some a little different ...
 
 
 
