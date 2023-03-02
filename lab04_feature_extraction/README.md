@@ -20,11 +20,8 @@ This exercise focuses on energy and pitch and the influence of window length and
 In the second task we apply the results to construct an endpointing and trimming tool.  We use frame based energy as feature and combine it with simple heuristics to create a trimming tool that cuts silence at the edges of a recording.
 
 
-2. **The Mel Spectrum**
+2. **CepstralLiftering**
 
-- Notebook: MelSpectrumFeatures.ipynb
+- Notebook: CepstralLiftering.ipynb
 
 
-3. **The Cepstrum**
-
-- Notebook: CepstralFeatures.ipynb
