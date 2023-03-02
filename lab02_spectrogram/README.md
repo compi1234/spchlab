@@ -30,10 +30,10 @@ the spectrographic view with perception in general.
     + Exercise 1: Mel Spectrogram
     + Exercise 2: Pitch and Formants of Human speech
 
-These exercises focus on peculiarities of human speech and hearing.  
+These exercises focus on properties of **human** speech and hearing.  
 The mel spectrogram is especially adapted to the frequency scale of the human ear.   
 Pitch and Formants are important properties of human speech that are very robust against background noise and spectral distortions.
-They related directly to the source-filter model of human speech production.
+They relate directly to the source-filter model of human speech production.
 
 
 
