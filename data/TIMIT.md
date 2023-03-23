@@ -7,9 +7,9 @@ The TIMIT corpus of read speech is designed to provide speech data for acoustic-
 The TIMIT corpus transcriptions have been hand verified. Test and training subsets, balanced for phonetic and dialectal coverage, are specified. Tabular computer-searchable information is included as well as written documentation.
 
 
-### USAGE IN THESE EXERCISES
+### USAGE IN SPCHLAB
 
-##### WHY TIMIT
+#### WHY TIMIT
 
 It is a well known standard database.  It is very small and too artificial according to today's standards.
 However due to its compactness and huge number of references, it is still popular for **exploratory** research in acoustic-phonetic recognition.
@@ -22,14 +22,17 @@ TIMIT is used in 2 setups:
 
 - phone recognition: in recognition mode we recognize phone sequences .  Typically this is done using a phone bigram model as extra knowledge source but without lexicons, language models, etc. and as such it can still be seen as a pure acoustic recognizer
 
-##### PHONE SET
+#### PHONE SETS
 
 The original TIMIT transcriptions were made with detailed phonetic labels using a 61 symbol set.
-This symbol set is rarely used today.  We typically collapse to 48 symbols and often even to 39.
-The 39 symbol set is almost equivalent to the CMU alphabet which is the more commonly used in speech recognition today.
+This symbol set is rarely used today.  In TIMIT reference experiments on phone classification it is common to train on
+a collapsed TIMIT48 symbol set and to recognize on an even more condensed 39 label set.   
+
+In **spchlab** we typically use **TIMIT-41**, i.e. a collapsed set
+corresponding to the CMU-39 phoneset + SIL(ence) + CL(closure) . 
 
 
-##### THE DATA SETS
+#### THE DATA SETS
 
 TIMIT comes with standard train/test set divisions
 
@@ -38,9 +41,24 @@ TIMIT comes with standard train/test set divisions
 - full test set: 168 speakers, 1344 sentences, 0.81 hrs
 
 
-##### TINYTIMIT
+TIMIT contains for each speaker
+- 2 sentences read by EVERY speaker (sa1,sa2)
+- 8 sentences that are either speaker specific or only read by a small number of speakers
 
-TINYTIMIT is a selection of 800 samples of 3 vowels each.
+The 'sa' sentences are interesting for research on speaker variability.
+However, they do more harm than good to train or evaluate speech recognition systems as they introduce tremendous bias.
+So it is advised to eliminate the 'sa' sentences in speech recognition experiments.
+
+
+#### Custom subsets
+
+TIMIT is a small dataset by today's standard.
+Still, for student exercises we sometimes prefer to use even smaller subsets.
+
+**TIMIT_MINI** is a random sample of about 10% of the speakers in train
+and 20% in test.
+
+**TINYTIMIT**  is a selection of 800 samples of 3 vowels each.
 
 
 
