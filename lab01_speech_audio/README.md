@@ -12,7 +12,7 @@ For the exercises and demos you need a properly working audio device.  Using goo
 
 - Notebook: Keyboard.ipynb
 
-<img src="88_key_piano.png"></img>
+<img src="../images/88_key_piano.jpg"></img>
 
 
 ### Exercise 3: Frequency Sensitivity of Human Hearing
@@ -21,7 +21,7 @@ For the exercises and demos you need a properly working audio device.  Using goo
 - Demo: Demo6
 - Reference: IPO Auditory Demonstrations CD (Demo6)
 
-<img src="Fletcher_Munson.jpg" alt="Equal Loudness Curves" style="height: 250px"></img>
+<img src="../images/Fletcher_Munson.jpg" alt="Equal Loudness Curves" style="height: 250px"></img>
 
 ### Exercise 4: Effect of Spectrum on Timbre
 
