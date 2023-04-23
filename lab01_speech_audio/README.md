@@ -12,7 +12,7 @@ For the exercises and demos you need a properly working audio device.  Using goo
 
 - Notebook: Keyboard.ipynb
 
-<img src="88_key_piano.png"></img>
+<img src="88_key_piano.jpg"></img>
 
 
 ### Exercise 3: Frequency Sensitivity of Human Hearing
