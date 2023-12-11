@@ -1,4 +1,6 @@
 *.pyc
 .ipynb*
+.ipynb*/
 ch4_class/models/
+dev*/*
 
