@@ -11,6 +11,10 @@ How to consistently embed figures in Markdown ?????????
 simple markdown
 ![](PetersonBarney_1952_fig8.jpg)
 
+or  with .png  
+
+![](PetersonBarney_1952_fig8.png)
+
 ##### Test2 - HTML and figure in same or sub directories
 simple   HTML
 
