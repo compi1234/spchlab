@@ -28,3 +28,6 @@ This is a wrapper notebook around some of the demos on the "IPO Auditory Demonst
 
 
 
+## [Suggested Exercises](EXERCISES.md)
+
+[Exercises](EXERCISES.md)
