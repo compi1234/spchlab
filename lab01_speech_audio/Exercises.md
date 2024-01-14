@@ -1,5 +1,17 @@
-# LAB01: Exercises on SPEECH and HEARING
+# Exercises on SPEECH and AUDIO
 For the exercises and demos you need a properly working audio device.  Using good quality headphones is advised.
+
+Exercises 1-3 show straightforward correspondance between physical properties (**amplitude, frequency**) and perception (**loudness, pitch/tone**).
+Showing such relationshsip is easily done for "simple sounds" such as wideband noise signals or pure tones.
+
+Exercises 4-6 deal with *"harmonic"* signals.  In first instance we focus on stationary sounds.
+We show in various ways how perception of **pitch** and **timbre**
+is largely independent and driven by different group properties of the spectrum.  
+In many situations **pitch** depends on the fundamental frequecy while the **timbre** depends on the spectral envelope over the harmonics.
+
+Exercise 7-8 focus on the **transient** nature of everyday speech and audio and how this influences perception with sometimes surprising results.
+
+All exercise details and questions are available inside the notebooks.
 
 ### Exercise 1: Loudness
 
@@ -29,28 +41,31 @@ For the exercises and demos you need a properly working audio device.  Using goo
 - Demo: Demo28
 - Reference: IPO Auditory Demonstrations CD (Demo28))
 
-### Exercise 5: Effect of Tone Envelope on Timbre
-
-- Notebook: AuditoryDemonstrations.ipynb
-- Demo: Demo29
-- Reference: IPO Auditory Demonstrations CD(Demo29)
-
-### Exercise 6: Effect of Echoes
-
-- Notebook: AuditoryDemonstrations.ipynb
-- Demo: Demo35
-- Reference: IPO Auditory Demonstrations CD (Demo35)
-
-### Exercise 7: Pitch and Timbre of Harmonic Signals
+### Exercise 5: Pitch and Timbre of Harmonic Signals
 
 - Notebook: HarmonicSignals.ipynb
 - Exercises:
   + Fourier Synthesis of a Square Wave
   + Pitch and Timbre of Harmonic Signals
 
-### Exercise 8: Harmonic Signals: digging deeper
+### Exercise 6: Harmonic Signals: digging deeper
 
 - Notebook: HarmonicSignals.ipynb
 - Exercises:
   + Periodicity and Rhythm
   + Influence of Tone Envelope on Timbre
+
+
+### Exercise 7: Effect of Tone Envelope on Timbre
+
+- Notebook: AuditoryDemonstrations.ipynb
+- Demo: Demo29
+- Reference: IPO Auditory Demonstrations CD(Demo29)
+
+### Exercise 8: Effect of Echoes
+
+- Notebook: AuditoryDemonstrations.ipynb
+- Demo: Demo35
+- Reference: IPO Auditory Demonstrations CD (Demo35)
+
+
