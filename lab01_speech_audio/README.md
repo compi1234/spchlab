@@ -1,56 +1,30 @@
-# JUPYTER NOTEBOOKS on SPEECH and HEARING
-For the exercises and demos you need a properly working audio device.  Using good quality headphones is advised.
+# LAB01: SPEECH and HEARING
 
-### Exercise 1: Loudness
+## Purpose
 
-- Notebook: AuditoryDemonstrations.ipynb
-- Demo: Demo4
-- Reference: IPO Auditory Demonstrations CD (Demo4)
-
-
-### Exercise 2: Pitch
-
-- Notebook: Keyboard.ipynb
-
-<img src="../figures/88_key_piano.jpg">
+This folder contains demonstrations and exercises on the *psychoacoustics* of speech, trying to answer following questions:   
+- How do we hear speech ?  
+- Which physical properties of the signal correlate to what element in our perception ?
 
 
-### Exercise 3: Frequency Sensitivity of Human Hearing
+## Notebooks
 
-- Notebook: AuditoryDemonstrations.ipynb
-- Demo: Demo6
-- Reference: IPO Auditory Demonstrations CD (Demo6)
+#### Keyboard.ipynb
 
-<img src="../figures/Fletcher_Munson.jpg" alt="Equal Loudness Curves" style="height: 400px">
+A very gentle introduction to the concept of pitch (tone on a musical scale)
 
-### Exercise 4: Effect of Spectrum on Timbre
 
-- Notebook: AuditoryDemonstrations.ipynb
-- Demo: Demo28
-- Reference: IPO Auditory Demonstrations CD (Demo28))
+#### HarmonicSignals.ipynb
 
-### Exercise 5: Effect of Tone Envelope on Timbre
+A GUI for experimenting with perception of harmonic signals.   The goal is to show that frequency content has correlates along 3 perceptual axis:   
+- **pitch**: short time periodicity results in a pitch percept, typically in the 20-400Hz range
+- **timbre**: spectral envelope shaping the intensities of the pitch harmonics determine the timbre of signals; e.g. for speech it is the key to determine the differences between vowels
+- **rhythm**: repetitions at a rate lower than about 15Hz are not perceived as a frequency but as some event repeating over time  
 
-- Notebook: AuditoryDemonstrations.ipynb
-- Demo: Demo29
-- Reference: IPO Auditory Demonstrations CD(Demo29)
 
-### Exercise 6: Effect of Echoes
+#### AuditoryDemonstrations.ipynb
 
-- Notebook: AuditoryDemonstrations.ipynb
-- Demo: Demo35
-- Reference: IPO Auditory Demonstrations CD (Demo35)
+This is a wrapper notebook around some of the demos on the "IPO Auditory Demonstration CD".  A small GUI and a spectrographic view are additions provided to the purely auditive demonstrations that we start from.
 
-### Exercise 7: Pitch and Timbre of Harmonic Signals
 
-- Notebook: HarmonicSignals.ipynb
-- Exercises:
-  + Fourier Synthesis of a Square Wave
-  + Pitch and Timbre of Harmonic Signals
 
-### Exercise 8: Harmonic Signals: digging deeper
-
-- Notebook: HarmonicSignals.ipynb
-- Exercises:
-  + Periodicity and Rhythm
-  + Influence of Tone Envelope on Timbre
