@@ -1,6 +1,5 @@
 # spchlab
 
-## What is spchlab ?
 *spchlab* is a Repository of Jupyter Noteboobs for Speech Recognition Demos and Exercises.
 
 *spchlab* contains a number of different topics that are organized by folder (labxx_name).  Each of these is rather independent from each other, but knowledge and skills may be reuquired from lower numbered lab sessions.    
@@ -11,11 +10,6 @@ Each lab-folder contains:
 - a number of exercises in notebook ExName.ipynb format
 
 *spchlab* resides on GitHub and heavily relies on the *pyspch* package.   
-
-
-## How to run spchlab ?
-
-
 
 ## pyspch
 

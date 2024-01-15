@@ -1,8 +1,8 @@
 # LAB01: SPEECH and AUDIO
 
-## Purpose
-
-This folder contains demonstrations and exercises on the *psychoacoustics* of speech and audio, trying to answer following questions:   
+[GITHUB Notebooks]("https://github.com/compi1234/spchlab/lab01_speech_audio)  
+    
+Introduction to the *psychoacoustics* of speech and audio, trying to answer following questions:   
 - How do we hear ?  
 - Which physical properties of the signal correlate to what element in our perception ?
 
