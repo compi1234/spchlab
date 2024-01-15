@@ -1,7 +1,8 @@
-#  SOURCE FILTER MODEL of SPEECH, PITCH and FORMANTS
+#  SOURCE FILTER MODEL of SPEECH
+## PITCH and FORMANTS
 
 
-## Background
+### Background
 
 The source filter model is a compact and insightfull model of speech production.
 It provides a direct link between speech production, articulation and acoustic-phonetics.  
@@ -13,7 +14,7 @@ Hence not surprisingly, formants correlate very well with vowel identity.
 
 
 
-## Exercises
+### Exercises
 
 In these exercises we explore formants and pitch in a number of different ways: 
 (i) how to derive them from the signal or the spectrogram
