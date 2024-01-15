@@ -1,7 +1,6 @@
 # LAB01: SPEECH and AUDIO
 
-[GITHUB Notebooks]("https://github.com/compi1234/spchlab/lab01_speech_audio)  
-    
+   
 Introduction to the *psychoacoustics* of speech and audio, trying to answer following questions:   
 - How do we hear ?  
 - Which physical properties of the signal correlate to what element in our perception ?
@@ -9,12 +8,15 @@ Introduction to the *psychoacoustics* of speech and audio, trying to answer foll
 
 ## Notebooks
 
-#### [Keyboard.ipynb](Keyboard.ipynb)
+For running the notebooks go to this [Repository](https://github.com/compi1234/spchlab/tree/main/lab01_speech_audio)  
+ 
+
+#### Keyboard.ipynb
 
 A very gentle introduction to the concept of pitch (tone on a musical scale)
 
 
-#### [HarmonicSignals.ipynb](HarmonicSignals.ipynb)
+#### HarmonicSignals.ipynb
 
 A GUI for experimenting with perception of harmonic signals.   The goal is to show that frequency content has correlates along 3 perceptual axis:   
 - **pitch**: short time periodicity results in a pitch percept, typically in the 20-400Hz range
@@ -22,7 +24,7 @@ A GUI for experimenting with perception of harmonic signals.   The goal is to sh
 - **rhythm**: repetitions at a rate lower than about 15Hz are not perceived as a frequency but as some event repeating over time  
 
 
-#### [AuditoryDemonstrations.ipynb](AuditoryDemonstrations.ipynb)
+#### AuditoryDemonstrations.ipynb
 
 This is a wrapper notebook around some of the demos on the "IPO Auditory Demonstration CD".  A small GUI and a spectrographic view are additions provided to the purely auditive demonstrations that we start from.
 
