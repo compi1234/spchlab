@@ -3,8 +3,9 @@
 
 ## Tutorials
 
-1. **mel_scale**
-   [This notebook](melscale.html) contains the design of the mel scale in a number of different variants.
+1. **mel_scale**   
+
+The ["mel-scale" tutorial notebook](mel_scale.html) contains the design of the mel scale in a number of different variants.
    It also shows how to design a mel scaled filterbank that is used to convert a Fourier Spectrogram into a mel spectrogram
    
 ## Exercises
