@@ -20,7 +20,7 @@ Each lab-folder contains:
 The notebooks have been developed and tested on *Google Colab*, *Windows 10/11* and *MacOS*.
 Generally speaking we expect the code to run on platforms supporting Python 3.9 or higher.
 
-Additional information on getting started with Google Colab is found [here](Colab_Intro.html).   
+Additional information on getting started with Google Colab is found [here](Colab_Intro.md).   
 
 
 ## How to run a specific exercise ?
