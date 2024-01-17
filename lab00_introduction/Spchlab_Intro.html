@@ -7887,12 +7887,12 @@ Then it goes out to look for segmentations.  You can listen to the AUDIO as well
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Signals</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">):</span>
@@ -7929,23 +7929,28 @@ Then it goes out to look for segmentations.  You can listen to the AUDIO as well
         <span class="bp">self</span><span class="o">.</span><span class="n">children</span> <span class="o">=</span> <span class="p">[</span> <span class="bp">self</span><span class="o">.</span><span class="n">UI</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">out</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">audio</span><span class="p">]</span>
         
     <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">y</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">sample_rate</span> <span class="o">=</span> <span class="n">Sp</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dir</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">signal</span><span class="o">+</span><span class="s2">".wav"</span><span class="p">)</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dir</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">signal</span>
+        <span class="n">y</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">sample_rate</span> <span class="o">=</span> <span class="n">Sp</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">name</span><span class="o">+</span><span class="s2">".wav"</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">fig</span> <span class="o">=</span> <span class="n">Spd</span><span class="o">.</span><span class="n">PlotWaveform</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">sample_rate</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">sample_rate</span><span class="p">)</span>
+        
         <span class="c1"># try to add segmentations</span>
+        <span class="c1"># The TIMIT segmentation files in the demo dir are slightly different than the original ones</span>
+        <span class="c1"># Sample level segmentations were converted to time based segmentation</span>
+        <span class="c1"># and the phonetic alphabet was collapsed to the CMU set (+closure)</span>
         <span class="n">segwrd</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="n">transcript</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="c1"># first find a word segmentation</span>
         <span class="c1">#try:</span>
-        <span class="n">segwrd</span> <span class="o">=</span> <span class="n">Sp</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dir</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">signal</span><span class="o">+</span><span class="s2">".wrd"</span><span class="p">,</span><span class="n">TIMIT</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">segwrd</span> <span class="o">=</span> <span class="n">Sp</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dir</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">signal</span><span class="o">+</span><span class="s2">".wrd"</span><span class="p">,</span><span class="n">dt</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">segwrd</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">add_seg_plot</span><span class="p">(</span><span class="n">segwrd</span><span class="p">,</span><span class="n">iax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ypos</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span><span class="n">Lines</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
             <span class="n">transcript</span> <span class="o">=</span> <span class="s2">" "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">segwrd</span><span class="o">.</span><span class="n">seg</span><span class="p">)</span>
         
         <span class="c1"># then add grapheme or phoneme segmentation</span>
         <span class="n">seg</span> <span class="o">=</span> <span class="kc">None</span>
-        <span class="n">seg</span> <span class="o">=</span> <span class="n">Sp</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dir</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">signal</span><span class="o">+</span><span class="s2">".gra"</span><span class="p">,</span><span class="n">TIMIT</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">seg</span> <span class="o">=</span> <span class="n">Sp</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dir</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">signal</span><span class="o">+</span><span class="s2">".gra"</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">seg</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">seg</span> <span class="o">=</span> <span class="n">Sp</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dir</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">signal</span><span class="o">+</span><span class="s2">".phn"</span><span class="p">,</span><span class="n">TIMIT</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>            
+            <span class="n">seg</span> <span class="o">=</span> <span class="n">Sp</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dir</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">signal</span><span class="o">+</span><span class="s2">".phn"</span><span class="p">)</span>          
         <span class="k">if</span> <span class="n">seg</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">add_seg_plot</span><span class="p">(</span><span class="n">seg</span><span class="p">,</span><span class="n">iax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ypos</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span><span class="n">Lines</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">transcript</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -7972,6 +7977,18 @@ Then it goes out to look for segmentations.  You can listen to the AUDIO as well
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>Signals(children=(HBox(children=(Dropdown(description='Signal', options=('bad_bead_booed', 'beed', 'b_8k', 'd1…</pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7979,7 +7996,7 @@ Then it goes out to look for segmentations.  You can listen to the AUDIO as well
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Example-with-data-on-URL-resource-and-spectrogram-plot">Example with data on URL resource and spectrogram plot<a class="anchor-link" href="#Example-with-data-on-URL-resource-and-spectrogram-plot">¶</a></h2><p>This shows how to load data from a remote resource.
+<h2 id="Working-with-data-on-a-remote-URL-resource-and-spectrogram-plot">Working with data on a remote URL resource and spectrogram plot<a class="anchor-link" href="#Working-with-data-on-a-remote-URL-resource-and-spectrogram-plot">¶</a></h2><p>This shows how to load data from a remote resource.
 The signal waveform is complemented with a spectrogram and multiple tears of segmentations.</p>
 </div>
 </div>
@@ -7989,14 +8006,14 @@ The signal waveform is complemented with a spectrogram and multiple tears of seg
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">dir</span> <span class="o">=</span> <span class="s2">"https://homes.esat.kuleuven.be/~spchlab/data/"</span>
 <span class="n">name</span> <span class="o">=</span> <span class="s2">"demo/friendly"</span>
 
-<span class="n">seg</span> <span class="o">=</span> <span class="n">Sp</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">name</span><span class="o">+</span><span class="s2">".gra"</span><span class="p">,</span><span class="n">root</span><span class="o">=</span><span class="nb">dir</span><span class="p">,</span><span class="n">TIMIT</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  
-<span class="n">segwrd</span> <span class="o">=</span> <span class="n">Sp</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">name</span><span class="o">+</span><span class="s2">".wrd"</span><span class="p">,</span><span class="n">root</span><span class="o">=</span><span class="nb">dir</span><span class="p">,</span><span class="n">TIMIT</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  
+<span class="n">seg</span> <span class="o">=</span> <span class="n">Sp</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">name</span><span class="o">+</span><span class="s2">".gra"</span><span class="p">,</span><span class="n">root</span><span class="o">=</span><span class="nb">dir</span><span class="p">)</span>  
+<span class="n">segwrd</span> <span class="o">=</span> <span class="n">Sp</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">name</span><span class="o">+</span><span class="s2">".wrd"</span><span class="p">,</span><span class="n">root</span><span class="o">=</span><span class="nb">dir</span><span class="p">)</span>  
 <span class="n">wavdata</span><span class="p">,</span> <span class="n">sr</span> <span class="o">=</span> <span class="n">Sp</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">dir</span><span class="o">+</span><span class="n">name</span><span class="o">+</span><span class="s2">".wav"</span><span class="p">)</span>
 <span class="n">shift</span><span class="o">=</span><span class="mf">0.01</span>
 <span class="n">spg</span> <span class="o">=</span> <span class="n">Sps</span><span class="o">.</span><span class="n">spectrogram</span><span class="p">(</span><span class="n">wavdata</span><span class="p">,</span><span class="n">sample_rate</span><span class="o">=</span><span class="n">sr</span><span class="p">,</span><span class="n">f_shift</span><span class="o">=</span><span class="n">shift</span><span class="p">)</span>
@@ -8024,44 +8041,15 @@ The signal waveform is complemented with a spectrogram and multiple tears of seg
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>Spchlab_Intro.ipynb<span class="w"> </span>--to<span class="w"> </span>html
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[NbConvertApp] Converting notebook Spchlab_Intro.ipynb to html
-[NbConvertApp] WARNING | Alternative text is missing on 3 image(s).
-[NbConvertApp] Writing 662417 bytes to Spchlab_Intro.html
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="ch">#! jupyter nbconvert Spchlab_Intro.ipynb --to html</span>
 </pre></div>
 </div>
 </div>

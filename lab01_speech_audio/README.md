@@ -8,8 +8,9 @@ Introduction to the *psychoacoustics* of speech and audio, trying to answer foll
 
 ## Notebooks
 
-For running the notebooks go to this [Repository](https://github.com/compi1234/spchlab/tree/main/lab01_speech_audio)  
- 
+There are 3 notebooks in this folder and a list of [suggested exercises](EX01.md).  Each notebook may be used for several exercises; there is no need to close the notebook after every exercise.
+
+
 
 #### Keyboard.ipynb
 

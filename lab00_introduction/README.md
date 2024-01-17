@@ -15,37 +15,31 @@ Each lab-folder contains:
 *spchlab* resides on GitHub and heavily relies on the *pyspch* package.
 
 
+## Platforms and Requirements
+
+The notebooks have been developed and tested on *Google Colab*, *Windows 10/11* and *MacOS*.
+Generally speaking we expect the code to run on platforms supporting Python 3.9 or higher.
+
+Additional information on Google Colab is found [here](Colab_Intro.html).   
+
+
 ## How to run a specific exercise ?
 
-Start with the README in the \<labxx_name\> folder
+Start with the README in the \<labxx_name\> folder.
+Descriptions of Exercises may be in the README file, in a special EXxx file,
+or directly in the notebooks.
 
 
+## Introductory Notebook   
 
-## Introductory Notebook   [SpchlabIntro.ipynb](SpchlabIntro.ipynb)
-
-This notebook illustrates the typical structure of a spchlab notebook:
-- make sure the prerequisite package *pyspch* is installed
+The notebook [Spchlab_Intro.ipynb](Spchlab_Intro.ipynb) walks you through the 
+ typical structure of a spchlab notebook:
+- making sure that the prerequisite package *pyspch* is installed
 - doing all the typical imports
 - running the core of the notebook
 
-In this notebook we show how to access the provided demo samples, listen to them and align them with provided transcripts
+In this notebook we show how to access provided demo samples, listen to them and align them with provided transcripts
 
-#### Running a notebook in Google Colab
-
-To be able to use Google Colab, you need to have a Google account. If you have one, make sure you are logged in.
-
-To run a notebook in COLAB:
-  - go to the spchlab repository on Github [https://github.com/compi1234/spchlab]
-  - click to open \<notebook>.ipynb
-  - now, do one of the following:
-	1. click on the "open in colab" browser extension icon  (if you have it installed)
-	2. Paste the GitHub exercise URL in a running colab session
-  - start running the notebook in colab
-  - neglect the Colab Warnings (see below)
-
-You may ignore following specific Colab WARNINGS
-1. After you install the pyspch package (which is the first thing you need to do, unless you have it permanently installed), you probably get a warning that you need to *restart the runtime*, Just CLICK and CONTINUE.
-2. When you start running the notebook, you may get a warning that the notebook is not authored by Google.  Just ignore and click  *Run anyway*.
 
 
 ## More on Software
@@ -61,8 +55,7 @@ You may ignore following specific Colab WARNINGS
 
 #### Platforms and Requirements
 
-The notebooks have been developed and tested on *Google Colab*, *Windows 10/11* and *MacOS*.
-Generally speaking we expect the code to run on platforms supporting Python 3.9 or higher.  *pyspch* has a list of dependencies that guarantee (within the bounds of our testing) full functionality.  We also provide an .yml example environment.
+*pyspch* has a list of dependencies that guarantee (within the bounds of our testing) full functionality.  We also provide an .yml example environment.
 Generally we avoid features - from any package - that are considered very novel and tried to avoid future deprecation warnings.
 
 So while the code is expected to be 99% platform independent, some dependencies are unavoidable:

@@ -1,13 +1,17 @@
 # LAB02: SPECTROGRAMS
 
 
-## Tutorials
+## Tutorials and Illustrattions
 
 1. **mel_scale**   
 
 This ["mel-scale" tutorial](https://compi1234.github.io/spchlab/lab02_spectrogram/mel_scale.html)
 contains the design of the mel scale in a number of different variants.
    It also shows how to design a mel scaled filterbank that is used to convert a Fourier Spectrogram into a mel spectrogram
+
+2. **Spectrogram_examples**
+
+The notebook ["Spectrogram_examples.ipynb"]() contains the code to make many of the plots in the notes on Spectrograms.
 
 
 ## Exercises
