@@ -21,7 +21,7 @@ Start with the README in the \<labxx_name\> folder
 
 
 
-## Example Notebook   [SpeechData.ipynb](SpeechData.ipynb)
+## Introductory Notebook   [SpchlabIntro.ipynb](SpchlabIntro.ipynb)
 
 This notebook illustrates the typical structure of a spchlab notebook:
 - make sure the prerequisite package *pyspch* is installed
