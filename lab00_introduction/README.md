@@ -20,7 +20,7 @@ Each lab-folder contains:
 The notebooks have been developed and tested on *Google Colab*, *Windows 10/11* and *MacOS*.
 Generally speaking we expect the code to run on platforms supporting Python 3.9 or higher.
 
-Additional information on Google Colab is found [here](Colab_Intro.html).   
+Additional information on getting started with Google Colab is found [here](Colab_Intro.html).   
 
 
 ## How to run a specific exercise ?
@@ -32,8 +32,7 @@ or directly in the notebooks.
 
 ## Introductory Notebook   
 
-The notebook [Spchlab_Intro.ipynb](Spchlab_Intro.ipynb) walks you through the 
- typical structure of a spchlab notebook:
+The notebook **Spchlab_Intro.ipynb** walks you through the typical structure of a spchlab notebook:
 - making sure that the prerequisite package *pyspch* is installed
 - doing all the typical imports
 - running the core of the notebook
