@@ -1,17 +1,23 @@
 # LAB02: SPECTROGRAMS
 
 
-## Tutorials and Illustrattions
+## Tutorials
 
-1. **mel_scale**   
+1. **Spectrogram**
 
-This ["mel-scale" tutorial](https://compi1234.github.io/spchlab/lab02_spectrogram/mel_scale.html)
-contains the design of the mel scale in a number of different variants.
-   It also shows how to design a mel scaled filterbank that is used to convert a Fourier Spectrogram into a mel spectrogram
+The notebook ["Tut01_spectrogram.ipynb"] shows how a spectrogram is the result of the sliding window appoach and the computation of short-time Fourier Spectra.
+It contains the code to make many of the plots in the course notes on Spectrograms.  The output can be seen [here](https://compi1234.github.io/spchlab/lab02_spectrogram/Tut01_spectrogram.html)
 
-2. **Spectrogram_examples**
+2. **mel_scale**   
 
-The notebook ["SpectrogramExamples.ipynb"] contains the code to make many of the plots in the course notes on Spectrograms.  The output can be seen [here](https://compi1234.github.io/spchlab/lab02_spectrogram/SpectrogramExamples.html)
+This ["Tut02_mel-scale" tutorial](https://compi1234.github.io/spchlab/lab02_spectrogram/Tut02_mel_scale.html)
+discusses the design of the mel scale in a number of different variants.
+It also shows how to design a mel scaled filterbank that is used to convert a Fourier Spectrogram into a mel spectrogram
+
+3. **mel Spectrogram**
+
+ ["Tut03_mel_spectrogram.ipynb"] how we transform a traditional Fourier spectrogram into a mel spectrogram using mel scaled filterbanks.
+ The output can be seen [here](https://compi1234.github.io/spchlab/lab02_spectrogram/Tut03_mel_spectrogram.html)
 
 
 ## Exercises
@@ -35,9 +41,5 @@ Overlaying phonetic segmentations on a speech spectrogram illustrates well that 
 the speech signal and the discreteness of any symbolic (grapheme or phonetic) representation.  Phonetic boundaries
 are more often than not fluid instead of abrupt.
 
-**Mel_Spectrogram.ipynb** :
-   + Mel.1: Mel Spectrogram
-
-These exercises focus on properties of **human** speech and hearing.  
-The mel spectrogram is especially adapted to the frequency scale of the human ear.  
-Some things look similar, some a little different ...
+**Tut03_mel_spectrogram.ipynb** :
+    + MelSpec.1: Mel Spectrogram - Answer the questions at the end of the Tutorial notebook
