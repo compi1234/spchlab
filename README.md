@@ -1,8 +1,15 @@
-# spchlab - Speech Recognition Demos and Exercises
+# spchlab - Speech Recognition Tutorials and Exercises
 
-*spchlab* is a Repository of Jupyter Noteboobs for Speech Recognition Demos, Tutorials and Exercises.
+*spchlab* is a Repository of Jupyter Noteboobs for Speech Recognition Demos, Tutorials and Exercises. 
 
 Different topics are organized by folder (LABxx_name). Each of these is rather independent.  It is not strictly necessary to follow the order of the labs, but a higher numbered lab is likely to build on knowledge and skills acquired in lower numbered lab sessions.   
+
+Each lab-folder contains:
+- a README.md file with a general description of the folder contents and links to the tutorials, demos and exercises  
+- a number of tutorial notebooks *\<Name>.ipynb*.  Web versions of these
+ can be viewed directly via github-pages.  The tutorial notebooks were also used for the generation of many figures in the course notes.
+- a number of exercises in text *\<Ex_name>.md* or in notebook *\<Ex_name>.ipynb* format
+
 
 ### The Notebooks
 For accessing the **notebooks**, follow the link to the correct LAB-folder.   
@@ -19,5 +26,5 @@ For accessing the **notebooks**, follow the link to the correct LAB-folder.
 
 
 ### Additional Documentation
-**Documentation** and **Tutorials** that do not require a run-time engine, as well as a top level description of the **Exercises** can be viewed on github.io:     
+**Documentation** and **Tutorials** that do not require a run-time engine, as well as a top level description of the **Exercises** can also be viewed on github pages:     
 [https://compi1234.github.io/spchlab/](https://compi1234.github.io/spchlab/)

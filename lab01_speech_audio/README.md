@@ -8,7 +8,7 @@ Introduction to the *psychoacoustics* of speech and audio, trying to answer foll
 
 ## Notebooks
 
-There are 3 notebooks in this folder and a list of [suggested exercises](EX01.md).  Each notebook may be used for several exercises; there is no need to close the notebook after every exercise.
+There are 3 notebooks in this folder and a list of [suggested exercises](Exercises.md).  Each notebook may be used for several exercises; there is no need to close the notebook after every exercise.
 
 
 
@@ -31,4 +31,4 @@ This is a wrapper notebook around some of the demos on the "IPO Auditory Demonst
 
 
 
-## [Suggested Exercises](EX01.md)
+## [Suggested Exercises](Exercises.md)
