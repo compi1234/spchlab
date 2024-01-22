@@ -3,22 +3,20 @@
 
 ## Tutorials
 
-1. **Spectrogram**
+1. **Tut01_spectrogram**
+\( [notebook](Tut01_spectrogram.ipynb) , [HTML](https://compi1234.github.io/spchlab/lab02_spectrogram/Tut01_spectrogram.html) \) 
 
-The notebook ["Tut01_spectrogram.ipynb"] shows how a spectrogram is the result of the sliding window appoach and the computation of short-time Fourier Spectra.
-It contains the code to make many of the plots in the course notes on Spectrograms.  The output can be seen [here](https://compi1234.github.io/spchlab/lab02_spectrogram/Tut01_spectrogram.html)
+shows how a spectrogram is the result of the sliding window appoach and the computation of short-time Fourier Spectra.
+It contains the code to make many of the plots in the course notes on Spectrograms. 
 
-2. **mel_scale**   
+2. **Tut02_mel_scale**   \( [notebook](Tut02_mel_scale.ipynb), [HTML](https://compi1234.github.io/spchlab/lab02_spectrogram/Tut02_mel_scale.html) \)  
 
-This ["Tut02_mel-scale" tutorial](https://compi1234.github.io/spchlab/lab02_spectrogram/Tut02_mel_scale.html)
 discusses the design of the mel scale in a number of different variants.
 It also shows how to design a mel scaled filterbank that is used to convert a Fourier Spectrogram into a mel spectrogram
 
-3. **mel Spectrogram**
-
- ["Tut03_mel_spectrogram.ipynb"] how we transform a traditional Fourier spectrogram into a mel spectrogram using mel scaled filterbanks.
- The output can be seen [here](https://compi1234.github.io/spchlab/lab02_spectrogram/Tut03_mel_spectrogram.html)
-
+3. **Tut03_mel_spectrogram** \( [notebook](Tut03_mel_spectrogram.ipynb), [HTML](https://compi1234.github.io/spchlab/lab02_spectrogram/Tut03_mel_spectrogram.html) \)
+   
+shows how we transform a traditional Fourier spectrogram into a mel spectrogram using mel scaled filterbanks.
 
 ## Exercises
 
