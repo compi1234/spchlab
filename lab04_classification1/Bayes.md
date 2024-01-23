@@ -13,13 +13,14 @@ A popular and simple implementations of a discriminant function is Bayes decisio
 It states that the *posterior probabilities* $P(C|x)$ can serve as discriminant functions and is even optimal under mild conditions.
 
 Thus, our decision rule is finding the maximum of the posterior probabilities over all classes 
-\begin{equation}
+$$
 C^* = max_C P(C|x)
-\end{equation}
+$$
 with the posterior computed according to Bayes rule in following manner:
-\begin{equation}
+$$
 P(C|x) = \frac{p(x|C) \times P(C)}{ p(x) } 
-\end{equation}   
+$$
+
 in which:
 - $x$ is a D-Dimensional feature Vector
 - $C$ is a class label or index
@@ -96,10 +97,10 @@ in which$\mathcal{N}_{kj}$ is the $j$-th mixture of Class $C_k$
 parameterized by $ w_{kj}, \mu_{kj}, \Sigma_{kj}$, respectively the weight, mean and convariance matrix.   Without any constraint on the parameters, these functions are also known as Radial Basis Functions.   In the probabilistic literature GMMs are used as probability density functions.  This merely requires that the weights sum up to 1.
 
 The parameters of a single Gaussian are easily estimated from example data using the maximum likelihood principle.  For the 1D case, yielding:
-\begin{eqnarray}
+$$
 \hat{\mu} & = & \frac{1}{N} \sum_i x_i \\   
 \hat{\sigma^2} & = & \frac{1}{N-1} \sum_i (x_i - \mu)^2
-\end{eqnarray}
+$$
 
 Estimating parameters of a Gaussian Mixture model from data is more involved and only approximate.  The *EM* (Estimation-Maximization)* algorithm finds a local optimum in an iterative way.
 
