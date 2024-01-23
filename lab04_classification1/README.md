@@ -1,6 +1,9 @@
-# LAB06: Bayesian Classification using Generative Models
+# LAB04: Bayesian Classification using a Generative Model
 
 
+## Background
+
+- [Bayesian Classification](Bayes.md)  gives a brief refresh on Bayes formula and its application in classification problems.   It also introduces Gaussian Mixture models (GMMs) as universal probability density approximators. (skip if you know it)
 
 ## Exercises
 
@@ -12,9 +15,7 @@ The different exercises all make use of the same paradigm and apply it to gradua
 The work involves: data processing, data exploration, data modeling, building the classifier, testing the classifier.
 
 
-##### Background
 
-- [BayesGMM.ipynb]        A very brief refresh on Bayes formula and GMMs (skip if you know it)
 
 - in lab03_source_filter  you looked at the distributions of pitch and formants in an exploratory way
 
