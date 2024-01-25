@@ -5,6 +5,8 @@
 
 - [Bayesian Classification](Bayes.md)  gives a brief refresh on Bayes formula and its application in classification problems.   It also introduces Gaussian Mixture models (GMMs) as universal probability density approximators. (skip if you know it)
 
+- [Standard Normal Distribution](StandardNormalDistribution.ipynb) can be used to view the standard normal distribution
+
 ## Exercises
 
 Within these exercises we make use of the "Generative, Bayesian" Framework in which the data is modeled  by a simple Gaussian  Distribution or Mixture of Gaussians distribution.
