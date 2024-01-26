@@ -42,20 +42,20 @@ The overlap between classes is significantly larger than was suggested by the Pe
 ### Exercises
 
 
-1. **PitchFormant_Analysis.ipynb** \( [notebook](PitchFormant_Analysis.ipynb) 
+1. **SpectrogramReading.ipynb** \( [notebook](SpectrogramReading.ipynb) \)
 
-Waveforms, spectrograms and spectral slices are just different views of the same signal.   In this exercise we explore which 'view' is most suited for which analysis,
-and how the different views can lead to consistent estimates of pitch and formants.
+Waveforms, spectrograms and spectral slices are just different views of the same signal.   In this exercise explore the different views and try to read as much information from them.
+We see how the different views can lead to consistent estimates of pitch and formants.
 See if you can determine gender and/or vowel identity from your extracted values.
 
-    + **Ex1. Extracting pitch and formants in time and or frequency domain**
-    + **Ex2. Extracting pitch and formants from the mel spectrum**
++ SgpRead-1. Extracting pitch and formants in time and or frequency domain
++ SpgRead2-2 Extracting pitch and formants from the mel spectrum
 
 
 2. **Hillenbrand_Formants** \( [notebook](Hillenbrand_Formants.ipynb) , [HTML](https://compi1234.github.io/spchlab/lab03_source_filter/Hillenbrand_Formants.html) \)
 
 This notebook contains plenty of plots.  Focus on the last couple of plots showing gender dependent distributions of F1-F2 and showing higher dimensional data
 in a grid plot in where f0
-    + Could you have predicted the gender dependent formant distributions from looking at the f0-F1-F2 grid plot ?
++ HilFmt 1. Could you have predicted the gender dependent formant distributions from looking at the f0-F1-F2 grid plot ?
 
 
