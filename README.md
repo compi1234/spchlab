@@ -20,9 +20,9 @@ For accessing the **notebooks**, follow the link to the correct LAB-folder.
 - [LAB03: The Source Filter Model](lab03_source_filter/README.md)
 - [LAB04: Bayesian Classification](lab04_classification1/README.md)
 - [LAB05: Feature Extraction](lab05_feature_extraction/README.md)
-- [LAB07: Dynamic Time Warping](lab07_dtw/README.md)
 - [LAB06: Classification using GMMs and DNNs](lab06_classification2/README.md)
-- [LAB08: Hidden Markov Models](lab08_hmmREADME.md)
+- [LAB07: Dynamic Time Warping](lab07_dtw/README.md)
+- [LAB08: Hidden Markov Models](lab08_hmm/README.md)
 
 
 ### Additional Documentation
