@@ -18,9 +18,9 @@ For accessing the **notebooks**, follow the link to the correct LAB-folder.
 - [LAB01: Speech and Audio](lab01_speech_audio/)
 - [LAB02: The Spectrogram](lab02_spectrogram/)
 - [LAB03: The Source Filter Model](lab03_source_filter/)
-- [LAB04: Bayesian Classification](lab04_bayes)
+- [LAB04: Bayesian Classification](lab04_bayes/)
 - [LAB05: Feature Extraction](lab05_feature_extraction/)
-- [LAB06: Classification using GMMs and DNNs](lab06_classification/)
+- [LAB06: Frame Classification using GMMs and DNNs](lab06_classification/)
 - [LAB07: Dynamic Time Warping](lab07_dtw/)
 - [LAB08: Hidden Markov Models](lab08_hmm/)
 
