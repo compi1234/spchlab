@@ -1,14 +1,21 @@
-# Exercise on Dynamic Time Warping
+# LAB07:  Dynamic Time Warping
 
 ## Background
 
-DTW finds a sequence distance between two sequences of vector data $ X_{i=1:N} \text{and } Y_{j=1:M}  
+DTW finds a sequence distance between two sequences of vector data 
+$$ 
+X_{i=1:N} \text{  and  } Y_{j=1:M}  
+$$
 
 The **sequence distance** is the minimum of the cummulative distances among all possible alignment paths
-$ (X_{i(s)},Y_{j(s)} ) \text{  for } s=1 ... L $
+$$
+(X_{i(s)},Y_{j(s)} ) \text{  for } s=1 ... L 
+$$
 
 whereas the cummulative distance along a given path is defined as:   
-$ \sum_s  D_l\left(X_{i(s)}, Y_{j(s)}\right) + D_t\left(\it{trans}\right) $   
+$$
+\sum_s  D_l\left(X_{i(s)}, Y_{j(s)}\right) + D_t\left(\it{trans}\right) 
+$$   
 with:  $ trans = \left( i(s)-i(s-1),  j(s)-j(s-1) \right) $
 
 + with $D_l(X,Y)$ denoting a *local distance metric* that measures distance between 2 feature vectors

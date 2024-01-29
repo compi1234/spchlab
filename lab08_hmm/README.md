@@ -1,4 +1,4 @@
-# Hidden Markov Models - Elementary Examples
+# LAB08:  Hidden Markov Models - Basic Algorithms
 
 
 

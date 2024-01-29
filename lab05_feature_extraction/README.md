@@ -1,4 +1,4 @@
-#  JUPYTER NOTEBOOKS on Feature Extraction for SPEECH
+#  LAB05:  Feature Extraction for Speech Recognition
 
 
 ## Background
