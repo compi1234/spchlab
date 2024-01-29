@@ -1,37 +1,43 @@
-#  JUPYTER NOTEBOOKS on SPECTROGRAMS
+# LAB02: SPECTROGRAMS
 
+
+## Tutorials
+
+1. **Spectrogram**
+\( [notebook](Spectrogram.ipynb) , [HTML](https://compi1234.github.io/spchlab/lab02_spectrogram/Spectrogram.html) \) 
+
+shows how a spectrogram is the result of the sliding window appoach and the computation of short-time Fourier Spectra.
+It contains the code to make many of the plots in the course notes on Spectrograms. 
+
+2. **Mel_scale**   \( [notebook](Mel_scale.ipynb), [HTML](https://compi1234.github.io/spchlab/lab02_spectrogram/Mel_scale.html) \)  
+
+discusses the design of the mel scale in a number of different variants.
+It also shows how to design a mel scaled filterbank that is used to convert a Fourier Spectrogram into a mel spectrogram
+
+3. **Mel_spectrogram** \( [notebook](Mel_spectrogram.ipynb), [HTML](https://compi1234.github.io/spchlab/lab02_spectrogram/Mel_spectrogram.html) \)
+   
+shows how we transform a traditional Fourier spectrogram into a mel spectrogram using mel scaled filterbanks.
 
 ## Exercises
 
+**[Ex_Filtered_Signals.ipynb](Ex_Filtered_signals.ipynb)** :
++ Filt.1: Speech with Telephone Bandwidth
++ Filt.2: Redundancy in bandpass-filtered Speech
++ Filt.3: Filtering of Harmonic Signals
 
-1. **Filtered_signals.ipynb** :
+Filtering an audio signal, i.e. removing part of the frequency spectrum,  has an immediate impact on audio quality.   At the same time its impact on speech understanding can be small thanks to redundancy in the speech signal.   A classical example is speech passed over a telephone line.   These exercises go into more detail and elaborate on the links between spectrum and perception.
 
-    + Exercise 1: Speech with Telephone Bandwidth   
-    + Exercise 2: Redundancy in bandpass-filtered Speech   
-    + Exercise 3: Filtering of Harmonic Signals
-    
-The main purpose of these exercises is to appreciate the complex transformation from spectrum to perception that is happening in our brain.   
-We show that large parts of the signal can be filtered out without destroying our speech understanding, though there is always a notable twist in quality.  
+**[Ex_Spectrogram.ipynb](Ex_Spectrogram.ipynb)** :
++ Spec.1: Phonetic Segmentations
++ Spec.2: Fourier Spectrogram: parameters
 
-2. **Spectrograms_basics.ipynb** : 
+A spectrogram is a time-frequency representation. It sounds generic, but different parameter settings give different tradeoffs and may give a very different 'view'.
+Discover for yourself the Heisenberg uncertainty principle of spectral analysis and find those parameters that best aligns
+the spectrographic view with perception in general.
 
-    + Exercise 1: Phonetic Segmentations
-    + Exercise 2: Fourier Spectrogram: parameters   
-       
 Overlaying phonetic segmentations on a speech spectrogram illustrates well that there is a discrepancy between the continuity of
 the speech signal and the discreteness of any symbolic (grapheme or phonetic) representation.  Phonetic boundaries
-are more often than not fluid and not instantaneous.
-A spectrogram is a time-frequency representation. It sounds generic, but different parameter settings may give you a very different 'view'.
-Discover for yourself the Heisenberg uncertainty principle of spectral analysis.  At the same time find those parameters that best aligns
-the spectrographic view with perception in general.     
+are more often than not fluid instead of abrupt.
 
-3. **Mel_Spectrogram.ipynb** : 
-
-    + Exercise 1: Mel Spectrogram
-
-These exercises focus on properties of **human** speech and hearing.  
-The mel spectrogram is especially adapted to the frequency scale of the human ear.   
-Some things look similar, some a little different ...
-
-
-
+**[Mel_spectrogram.ipynb](Mel_spectrogram.ipynb)** :   
+ + MelSpec.1: Mel Spectrogram - Answer the questions at the end of the Tutorial notebook

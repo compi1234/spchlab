@@ -1,73 +1,30 @@
-# spchlab
+# spchlab - Speech Recognition Tutorials and Exercises
 
-*spchlab* is a Repository of Jupyter Noteboobs for Speech Recognition Demos and Exercises.
+*spchlab* is a Repository of Jupyter Noteboobs for Speech Recognition Demos, Tutorials and Exercises. 
 
-*spchlab* heavily relies on the *pyspch* package.   
-Both *spchlab* and *pyspch* reside on GitHub and are freely available.   
+Different topics are organized by folder (LABxx_name). Each of these is rather independent.  It is not strictly necessary to follow the order of the labs, but a higher numbered lab is likely to build on knowledge and skills acquired in lower numbered lab sessions.   
 
-*spchlab* is divided in a number of different topics
-that stand rather independent from each other.
-
-## Platforms and Requirements
-
-The notebooks have been developed and tested on *Google Colab*, *Windows 10* and *MacOS*.
-Generally speaking we expect the code to run on platforms supporting Python 3.7 or higher.  *pyspch* has a list of dependencies that guarantee (within the bounds of our testing) full functionality.  We also provide an .yml environment.
-Generally we avoid features - from any package - that are considered very novel and tried to avoid future deprecation warnings.
-
-So while the code is expected to be 99% platform independent, some dependencies are not:
-- anything relating to AUDIO I/O tends to be hardware and platform dependent
-- Some notebooks rely on pytorch and torch audio and have been tested in a CUDA environmnet;  CUDA is not available on MAC and the CPU-only version was not reliably tested
-- a small number of plotting routines are not robust against different versions of matplotlib; to minize the effect we also do not rely on the standard 3.2.2 version in colab
+Each lab-folder contains:
+- a README.md file with a general description of the folder contents and links to the tutorials, demos and exercises  
+- a number of tutorial notebooks *\<Name>.ipynb*.  Web versions of these
+ can be viewed directly via github-pages.  The tutorial notebooks were also used for the generation of many figures in the course notes.
+- a number of exercises in text *\<Ex_name>.md* or in notebook *\<Ex_name>.ipynb* format
 
 
+### The Notebooks
+For accessing the **notebooks**, follow the link to the correct LAB-folder.   
+
+- [LAB00: Introduction](lab00_introduction/README.md)
+- [LAB01: Speech and Audio](lab01_speech_audio/README.md)
+- [LAB02: The Spectrogram](lab02_spectrogram/README.md)
+- [LAB03: The Source Filter Model](lab03_source_filter/README.md)
+- [LAB04: Bayesian Classification](lab04_classification1/README.md)
+- [LAB05: Feature Extraction](lab05_feature_extraction/README.md)
+- [LAB06: Dynamic Time Warping](lab06_dtw/README.md)
+- [LAB07: Classification using GMMs and DNNs](lab07_classification2/README.md)
+- [LAB08: HMMs and Viterbi Alignment](lab08_viterbi/README.md)
 
 
-## Running a notebook in Google Colab
-
-All of the exercises can be run in [Google Colab](https://colab.research.google.com/).
-Google Colab is a collabarative workspace in the cloud.   All you need is a browser to get access.  For most people Google Colab will be the easiest way to run the exercises.  
-To be able to use Google Colab, you need to have a Google account. If you have one, make sure you are logged in.
-
-Run a notebook in COLAB:
-  - go to the spchlab repository in Github [https://github.com/compi1234/spchlab]
-  - click to open <exercise_name>.ipynb
-  - now, do one of the following:
-	1. click on the "open in colab" browser extension icon  (if you have it installed)
-	2. Paste the GitHub exercise URL in a running colab session
-  - start running the notebook in colab
-
-### Colab WARNINGS
-There are 2 innocent warnings that you will probably run into
-1. After you install the pyspch package (which is almost always the first thing you need to do), you probably get a warning that you need to **restart the runtime**, Just CLICK and CONTINUE.
-2. When you start running the notebook, you may get a warning that the notebook is not authored by Google.  Just ignore and click  'Run anyway'.
-
-## Running the notebooks on your own PC
-
-If you want to run these notebooks outside the Google Colab environment, e.g. on your own PC,  make sure to install the **pyspch** package (available in github/compi1234/pyspch).  
-
-Dependencies:
-+ preferably Python >=3.7, <=3.9
-+ Most secure is to build a dedicated environment based e.g. on the available in py37.yml 
-+ You may just add pyspch to your current environment, but be aware that this may lead to conflicts
-+ Some notebooks require pytorch
-    - look at https://pytorch.org/get-started/locally/  for installation instructions for pytorch and its dependencies
-
-
-
-## Structure of our Jupyter notebooks
-Our notebooks contain a combination of text and Python code.  Notebooks are organized in cells. Text cells just contain an explanation of what is going on. Code cells can be executed one at a time by clicking on the arrow pointing to the cell. This step-by-step execution let's you follow at your own pace what is going on in a long and complex program. Strictly speaking there is no requirement that you execute cells from top to bottom, but in practice notebooks are often organized as such.  Especially the first couple of cells with imports and new function definitions should be run in their natural order.
-
-## What do you need to know about Python ?
-Our notebooks contain Python code. Most of the code (with the explanation) will be self-explanatory. You are not expected to write your own Python scripts or code (unless you do a project).  But you are expected from time to time to make small changes to parameters/ code flow ...
-
-If you're not familiar with Python, following information may be worthwhile:
-+ Python uses indexing starting at 0
-+ Python is object oriented
-+ The import statement defines packages and parts thereof for you current program, those cells are obviously essential
-
-## pyspch
-*pyspch* is our own speech processing and recognition package that has grown over the years with spchlab.  It is not intended to be a full blown state of the art package to do speech recognition with.   Its focus is tutorial in nature and being a support package for spchlab.
-* Packages that pyspch relieas on:
-  + *numpy, pandas, scipy, sklearn* as elementary packages supporting machine learning
-  + *matplotlib, seaborn* for plotting 
-  + *Pytorch, torchaudio, tensorflow*: for the exercises using DNNs
+### Additional Documentation
+**Documentation** and **Tutorials** that do not require a run-time engine, as well as a top level description of the **Exercises** can also be viewed on github pages:     
+[https://compi1234.github.io/spchlab/](https://compi1234.github.io/spchlab/)
