@@ -5,8 +5,7 @@ LAB01 touches on the *psychoacoustics* of speech and audio, already thinking ahe
 - Which physical properties of the signal correlate to what element in our perception ?
 
 
-## The Notebooks 
-[Notebook Repository](https://github.com/compi1234/spchlab/tree/main/lab01_speech_audio/)
+## Notebooks 
 
 - **Keyboard.ipynb** :
 A very gentle introduction to the concept of pitch (tone on a musical scale)
@@ -16,7 +15,7 @@ A GUI for experimenting with perception of harmonic signals.   The goal is to sh
 This is a wrapper notebook around some of the demos that were published on the "IPO Auditory Demonstration CD".  A small GUI and a spectrographic view are additions provided to the purely auditive demonstrations.
 
 
-## The Exercises
+## Exercises
 For the exercises and demos you need a properly working audio device.  Using good quality headphones is advised.
 
 Exercises 1-3 show straightforward correspondance between physical properties (**amplitude, frequency**) and perception (**loudness, pitch/tone**).

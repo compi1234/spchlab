@@ -25,9 +25,9 @@ For accessing the **notebooks**, follow the link to the correct LAB-folder.
 - [LAB08: Hidden Markov Models](lab08_hmm/README.md)
 
 
-### Additional Documentation
+### Tutorial Notebooks
 
-An overview of all Tutorials is found [here](HTML/README.md)
+All executed tutorial notebooks have been saved [here](HTML/README.md)
 
 **Documentation** and **Tutorials** that do not require a run-time engine, as well as a top level description of the **Exercises** can also be viewed on github pages:     
 [https://compi1234.github.io/spchlab/](https://compi1234.github.io/spchlab/)

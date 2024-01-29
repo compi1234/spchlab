@@ -1,7 +1,5 @@
 #  SOURCE FILTER MODEL of SPEECH - PITCH and FORMANTS
 
-[Notebook Repository](https://github.com/compi1234/spchlab/tree/main/lab03_source_filter/)   
-[Tutorial Repository](https://compi1234.github.io/spchlab/HTML/)
 
 ### Background
 
@@ -26,11 +24,11 @@ We don't perform the feature extraction as such, but start from available databa
 
 Here we try to replicate the main results (tables and figures) of the seminal Peterson and Barney 1952 paper.
 
-2. **[Pitch Statistics (Hillenbrand Database)](https://compi1234.github.io/spchlab/HTML/Hillenbrand_Pitch.html)**
+2. **[Pitch Statistics (Hillenbrand Database)](https://compi1234.github.io/spchlab/HTML/PitchDistributions.html)**
 
 provides histograms of average pitch for different classes: male, female, boy, girl
 
-3. **[Formant Statistics (Hillenbrand Database)](https://compi1234.github.io/spchlab/HTML/Hillenbrand_Formants.html)**
+3. **[Formant Statistics (Hillenbrand Database)](https://compi1234.github.io/spchlab/HTML/FormantDistributions.html)**
 
 provides numerous statistical views on formant values (mainly F1 and F2) as available in the Hillenbrand database.
 This analysis shows well how F1-F2 clusters are well separate for a small number of vowels, but how clutter increases when including all vowels.
@@ -50,7 +48,7 @@ See if you can determine gender and/or vowel identity from your extracted values
 + SpgRead2-2 Extracting pitch and formants from the mel spectrum
 
 
-2. **[Hillenbrand Formants](Hillenbrand_Formants.ipynb)**
+2. **[FormantDistributions](FormantDistributions.ipynb)**
 
 This notebook contains plenty of plots.  Focus on the last couple of plots showing gender dependent distributions of F1-F2 and showing higher dimensional data
 in a grid plot in where f0
