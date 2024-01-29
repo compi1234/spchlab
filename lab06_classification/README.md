@@ -1,4 +1,4 @@
-# LAB 07: Classification with Spectral and Cepstral Feature Vectors
+# LAB 06: Classification of frames with Spectral and Cepstral Feature Vectors
 
 ## Exercises
 

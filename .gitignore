@@ -1,6 +1,6 @@
 *.pyc
 .ipynb*
-.ipynb*/
+.ipynb*/*
 */animations
 ch4_class/models/
 dev

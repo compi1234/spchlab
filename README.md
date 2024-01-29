@@ -14,20 +14,18 @@ Each lab-folder contains:
 ### The Notebooks
 For accessing the **notebooks**, follow the link to the correct LAB-folder.   
 
-- [LAB00: Introduction](lab00_introduction/README.md)
-- [LAB01: Speech and Audio](lab01_speech_audio/README.md)
-- [LAB02: The Spectrogram](lab02_spectrogram/README.md)
-- [LAB03: The Source Filter Model](lab03_source_filter/README.md)
-- [LAB04: Bayesian Classification](lab04_classification1/README.md)
-- [LAB05: Feature Extraction](lab05_feature_extraction/README.md)
-- [LAB06: Classification using GMMs and DNNs](lab06_classification2/README.md)
-- [LAB07: Dynamic Time Warping](lab07_dtw/README.md)
-- [LAB08: Hidden Markov Models](lab08_hmm/README.md)
+- [LAB00: Introduction](./lab00_introduction/)
+- [LAB01: Speech and Audio](lab01_speech_audio/)
+- [LAB02: The Spectrogram](lab02_spectrogram/)
+- [LAB03: The Source Filter Model](lab03_source_filter/)
+- [LAB04: Bayesian Classification](lab04_bayes/)
+- [LAB05: Feature Extraction](lab05_feature_extraction/)
+- [LAB06: Frame Classification using GMMs and DNNs](lab06_classification/)
+- [LAB07: Dynamic Time Warping](lab07_dtw/)
+- [LAB08: Hidden Markov Models](lab08_hmm/)
 
 
 ### Tutorial Notebooks
 
 All executed tutorial notebooks have been saved [here](HTML/README.md)
 
-**Documentation** and **Tutorials** that do not require a run-time engine, as well as a top level description of the **Exercises** can also be viewed on github pages:     
-[https://compi1234.github.io/spchlab/](https://compi1234.github.io/spchlab/)
