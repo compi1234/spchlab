@@ -1,4 +1,31 @@
-# spchlab - Speech Recognition Tutorials and Exercises
+# spchlab - Tutorials
+
+Here you find an overview of short knowledge clips presented in tutorial notebooks and saved .html.
+For access to the notebooks directly, to the [spchlab repository](https://github.com/compi1234/spchlab/tree/main) 
+
+### LAB00 - Introduction
+
+- [Segmentations](Segmentations.html)
+
+### LAB01 - Speech and Audio
+
+- [Keyboard](Keyboard.html)
+
+### LAB02 - Spectrogram
+
+- [Spectrogram](Spectrogram.html)
+- [Mel scale](Mel_scale.html)
+- [Mel spectrogram](Mel_spectrogram.html)
+
+### LAB03 - Source Filter
+
+- [Peterson Barney](PetersonBarney.html)
+- [Hillenbrand Pitch](Hillenbrand_Pitch.html)
+- [Hillenbrand_Formants](Hillenbrand_Formants.html)
+
+### LAB04 - Bayes
+
+- [StandardNormalDistribution](StandardNormalDistribution.html)
 
 *spchlab* is a Repository of Jupyter Noteboobs for Speech Recognition Demos, Tutorials and Exercises. 
 
@@ -26,8 +53,5 @@ For accessing the **notebooks**, follow the link to the correct LAB-folder.
 
 
 ### Additional Documentation
-
-An overview of all Tutorials is found [here](HTML/README.md)
-
 **Documentation** and **Tutorials** that do not require a run-time engine, as well as a top level description of the **Exercises** can also be viewed on github pages:     
 [https://compi1234.github.io/spchlab/](https://compi1234.github.io/spchlab/)

@@ -1,15 +1,14 @@
 # LAB01: SPEECH and AUDIO
 
    
-Introduction to the *psychoacoustics* of speech and audio, trying to answer following questions:   
+LAB01 touches on the *psychoacoustics* of speech and audio, already thinking ahead in terms of speech recognition.  Questions that we raise, are:   
 - How do we hear ?  
 - Which physical properties of the signal correlate to what element in our perception ?
 
 
 ## Notebooks
 
-There are 3 notebooks in this folder and a list of [suggested exercises](Exercises.md).  Each notebook may be used for several exercises; there is no need to close the notebook after every exercise.
-
+There are 3 notebooks in this folder and a list of [suggested exercises](Exercises.md) spread over the different notebooks.
 
 
 #### Keyboard.ipynb
@@ -19,7 +18,7 @@ A very gentle introduction to the concept of pitch (tone on a musical scale)
 
 #### HarmonicSignals.ipynb
 
-A GUI for experimenting with perception of harmonic signals.   The goal is to show that frequency content has correlates along 3 perceptual axis:   
+A GUI for experimenting with perception of harmonic signals.   The goal is to show that frequency content has correlates along 3 very quite perceptual axis:   
 - **pitch**: short time periodicity results in a pitch percept, typically in the 20-400Hz range
 - **timbre**: spectral envelope shaping the intensities of the pitch harmonics determine the timbre of signals; e.g. for speech it is the key to determine the differences between vowels
 - **rhythm**: repetitions at a rate lower than about 15Hz are not perceived as a frequency but as some event repeating over time  
@@ -27,7 +26,7 @@ A GUI for experimenting with perception of harmonic signals.   The goal is to sh
 
 #### AuditoryDemonstrations.ipynb
 
-This is a wrapper notebook around some of the demos on the "IPO Auditory Demonstration CD".  A small GUI and a spectrographic view are additions provided to the purely auditive demonstrations that we start from.
+This is a wrapper notebook around some of the demos that were published on the "IPO Auditory Demonstration CD".  A small GUI and a spectrographic view are additions provided to the purely auditive demonstrations.
 
 
 
