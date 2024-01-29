@@ -13,7 +13,7 @@ Additional information on getting started with Google Colab is found [here](COLA
 For each of the labs start with the README.
 This will contain a short description of Tutorials and the Exercises that are available in the lab-folder.
 
-As a first notebook, we suggest to run  **Segmentations.ipynb** in lab00_introduction.  This notebook walks you through the typical structure of a spchlab notebook with plenty of comments:
+As a first notebook, we suggest to run  **Segmentations.ipynb** in [lab00_introduction](https://github.com/compi1234/spchlab/tree/main/lab00_introduction/).  This notebook walks you through the typical structure of a spchlab notebook with plenty of comments:
 - making sure that the prerequisite package *pyspch* is installed
 - doing all the required/typical imports
 - loading sampled data or other required data

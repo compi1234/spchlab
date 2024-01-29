@@ -1,6 +1,7 @@
-#  SOURCE FILTER MODEL of SPEECH
-## PITCH and FORMANTS
+#  SOURCE FILTER MODEL of SPEECH - PITCH and FORMANTS
 
+[Notebook Repository](https://github.com/compi1234/spchlab/tree/main/lab03_source_filter/)   
+[Tutorial Repository](https://compi1234.github.io/spchlab/HTML/)
 
 ### Background
 
@@ -21,18 +22,15 @@ We don't perform the feature extraction as such, but start from available databa
 
 ### Tutorials
 
-1. **Peterson Barney** 
-\( [notebook](PetersonBarney.ipynb) , [HTML](https://compi1234.github.io/spchlab/lab03_source_filter/PetersonBarney.html) \) 
+1. **[Peterson Barney](https://compi1234.github.io/spchlab/HTML/PetersonBarney.html)** 
 
-This notebook tries to replicate the main results (tables and figures) of the seminal Peterson and Barney 1952 paper.
+Here we try to replicate the main results (tables and figures) of the seminal Peterson and Barney 1952 paper.
 
-2. **Pitch Statistics (Hillenbrand Database)** 
-\( [notebook](Hillenbrand_Pitch.ipynb) , [HTML](https://compi1234.github.io/spchlab/lab03_source_filter/Hillenbrand_Pitch.html) \) 
+2. **[Pitch Statistics (Hillenbrand Database)](https://compi1234.github.io/spchlab/HTML/Hillenbrand_Pitch.html)**
 
 provides histograms of average pitch for different classes: male, female, boy, girl
 
-3. **Formant Statistics (Hillenbrand Database)** 
-\( [notebook](PetersonBarney.ipynb) , [HTML](https://compi1234.github.io/spchlab/lab03_source_filter/Hillenbrand_Formants.html) \)
+3. **[Formant Statistics (Hillenbrand Database)](https://compi1234.github.io/spchlab/HTML/Hillenbrand_Formants.html)**
 
 provides numerous statistical views on formant values (mainly F1 and F2) as available in the Hillenbrand database.
 This analysis shows well how F1-F2 clusters are well separate for a small number of vowels, but how clutter increases when including all vowels.
@@ -42,7 +40,7 @@ The overlap between classes is significantly larger than was suggested by the Pe
 ### Exercises
 
 
-1. **SpectrogramReading.ipynb** \( [notebook](SpectrogramReading.ipynb) \)
+1. **[SpectrogramReading.ipynb](SpectrogramReading.ipynb)**
 
 Waveforms, spectrograms and spectral slices are just different views of the same signal.   In this exercise explore the different views and try to read as much information from them.
 We see how the different views can lead to consistent estimates of pitch and formants.
@@ -52,7 +50,7 @@ See if you can determine gender and/or vowel identity from your extracted values
 + SpgRead2-2 Extracting pitch and formants from the mel spectrum
 
 
-2. **Hillenbrand_Formants** \( [notebook](Hillenbrand_Formants.ipynb) , [HTML](https://compi1234.github.io/spchlab/lab03_source_filter/Hillenbrand_Formants.html) \)
+2. **[Hillenbrand Formants](Hillenbrand_Formants.ipynb)**
 
 This notebook contains plenty of plots.  Focus on the last couple of plots showing gender dependent distributions of F1-F2 and showing higher dimensional data
 in a grid plot in where f0
