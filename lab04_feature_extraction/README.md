@@ -1,4 +1,4 @@
-#  LAB05:  Feature Extraction for Speech Recognition
+#  LAB04:  Feature Extraction for Speech Recognition
 
 
 ## Background
@@ -10,18 +10,27 @@ Apart from spectral analysis, there are also a number of features that may be co
 
 ## Exercises
 
-1. **Time Domain Feature Extraction**
+**Ex.1 Time Domain Feature Extraction** (TimeDomainFeatures.ipynb)
 
-- Notebook: TimeDomainFeatures.ipynb
-- Notebook: TrimAudio.ipynb
 
 This exercise focuses on energy and pitch and the influence of window length and shift.  The results are straightforward to interpret when thinking about the role of pitch in the source-filter model. By and large we reach the same conclusions as for spectral analysis. 
 
 In the second task we apply the results to construct an endpointing and trimming tool.  We use frame based energy as feature and combine it with simple heuristics to create a trimming tool that cuts silence at the edges of a recording.
 
 
-2. **CepstralLiftering**
+**Ex.2 CepstralLiftering** (CepstralLiftering.ipynb)
 
-- Notebook: CepstralLiftering.ipynb
+This exercise demonstrates the magic of cepstral liftering to separate spectral envelope from pitch information in an automatic way.
+
+
+
+**Ex.3 MelSpectrogram**
+
+Hereunder we list a number of exercises related to the mel spectrum, that may have been executed before or the can be done as one group at this point.
+- lab02/Filt-Ex.2 : Revisit your answers to this exercise (on bandpass and bandstop filtering of speech) from the previous session and remotivate (or adjust) your answers based on the mel frequency concept.
+- lab02/Melspec-Ex.1:
+    + motivating the mel spectrogram
+    + difference between high resolution and critical band mel spectra
+- lab03/SpgR-Ex.2: implications of the mel scale for pitch and formant analysis
 
 

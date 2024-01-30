@@ -20,15 +20,15 @@ shows how we transform a traditional Fourier spectrogram into a mel spectrogram 
 ## Exercises
 
 **[FilteredSignals.ipynb](FilteredSignals.ipynb)** :
-+ Filt.1: Speech with Telephone Bandwidth
-+ Filt.2: Redundancy in bandpass-filtered Speech
-+ Filt.3: Filtering of Harmonic Signals
++ Filt-Ex.1: Speech with Telephone Bandwidth
++ Filt-Ex.2: Redundancy in bandpass-filtered Speech
++ Filt-Ex.3: Filtering of Harmonic Signals
 
 Filtering an audio signal, i.e. removing part of the frequency spectrum,  has an immediate impact on audio quality.   At the same time its impact on speech understanding can be small thanks to redundancy in the speech signal.   A classical example is speech passed over a telephone line.   These exercises go into more detail and elaborate on the links between spectrum and perception.
 
 **[SpectrogramGUI.ipynb](SpectrogramGUI.ipynb)** :
-+ Spec.1: Phonetic Segmentations
-+ Spec.2: Fourier Spectrogram: parameters
++ Spec-Ex.1: Phonetic Segmentations
++ Spec-Ex.2: Fourier Spectrogram: parameters
 
 A spectrogram is a time-frequency representation. It sounds generic, but different parameter settings give different tradeoffs and may give a very different 'view'.
 Discover for yourself the Heisenberg uncertainty principle of spectral analysis and find those parameters that best aligns
@@ -39,4 +39,4 @@ the speech signal and the discreteness of any symbolic (grapheme or phonetic) re
 are more often than not fluid instead of abrupt.
 
 **[MelSpectrogram.ipynb](MelSpectrogram.ipynb)** :   
- + MelSpec.1: Mel Spectrogram - Answer the questions at the end of the Tutorial notebook
+ + MelSpec-Ex.1: Mel Spectrogram - Answer the questions at the end of the Tutorial notebook

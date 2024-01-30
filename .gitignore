@@ -2,5 +2,5 @@
 .ipynb*
 .ipynb*/*
 */animations
-ch4_class/models/
 dev
+convert_to_html.*
