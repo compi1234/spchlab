@@ -24,15 +24,15 @@ We don't perform the feature extraction as such, but start from available databa
 
 Here we try to replicate the main results (tables and figures) of the seminal Peterson and Barney 1952 paper.
 
-2. **[Pitch Statistics (Hillenbrand Database)](https://compi1234.github.io/spchlab/HTML/PitchDistributions.html)**
+2. **[Pitch Distribution (Hillenbrand Database)](https://compi1234.github.io/spchlab/HTML/PitchDistributions.html)**
 
-provides histograms of average pitch for different classes: male, female, boy, girl
+provides histograms of average pitch for different classes: male, female, boy, girl and a simple Gaussian fit
 
-3. **[Formant Statistics (Hillenbrand Database)](https://compi1234.github.io/spchlab/HTML/FormantDistributions.html)**
+3. **[Formant Distribution (Hillenbrand Database)](https://compi1234.github.io/spchlab/HTML/FormantDistributions.html)**
 
-provides numerous statistical views on formant values (mainly F1 and F2) as available in the Hillenbrand database.
-This analysis shows well how F1-F2 clusters are well separate for a small number of vowels, but how clutter increases when including all vowels.
-The overlap between classes is significantly larger than was suggested by the Peterson Barney data
+provides different views on the distribution of formant values (mainly F1 and F2) as measured in the Hillenbrand database.
+This analysis shows well how F1-F2 clusters are well separate for a small number of vowels, but also how much overlap there is when including all vowels.
+The overlap between classes is significantly larger than was suggested by the 1952 Peterson Barney data.
 
 
 ### Exercises
@@ -44,14 +44,15 @@ Waveforms, spectrograms and spectral slices are just different views of the same
 We see how the different views can lead to consistent estimates of pitch and formants.
 See if you can determine gender and/or vowel identity from your extracted values.
 
-+ SgpRead-1. Extracting pitch and formants in time and or frequency domain
-+ SpgRead2-2 Extracting pitch and formants from the mel spectrum
++ SgpR-Ex.1: Extracting pitch and formants in time and or frequency domain
++ SpgR-Ex.2: Extracting pitch and formants from the mel spectrum
 
 
 2. **[FormantDistributions](FormantDistributions.ipynb)**
 
 This notebook contains plenty of plots.  Focus on the last couple of plots showing gender dependent distributions of F1-F2 and showing higher dimensional data
 in a grid plot in where f0
-+ HilFmt 1. Could you have predicted the gender dependent formant distributions from looking at the f0-F1-F2 grid plot ?
+
++ Fmt.Ex1: Could you have predicted the gender dependent formant distributions from looking at the f0-F1-F2 grid plot ?
 
 
