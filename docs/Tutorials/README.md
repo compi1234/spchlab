@@ -25,12 +25,12 @@ For access to the notebooks directly, go to the [spchlab repository](https://git
 
 ### LAB04 - Feature Extraction
 
-- [FeatureExtraction](FeatureExtraction.html)
+- [Feature Extraction](FeatureExtraction.html)
 
 
 ### LAB05 - Bayes
 
-- [StandardNormalDistribution](StandardNormalDistribution.html)
+- [Standard Normal Distribution](StandardNormalDistribution.html)
 
 
 ### LAB06 - Frame Classification
@@ -38,5 +38,9 @@ For access to the notebooks directly, go to the [spchlab repository](https://git
 
 ### LAB07 - Dynamic Time Warping
 
+- [Dynamic Time Warping](DynamicTimeWarping.html)
 
-### LAB08 - Hidden Markov Models
+### LAB08 - Hidden Markov Models Part-1
+
+
+### LAB09 - Hidden Markov Models Part-2
