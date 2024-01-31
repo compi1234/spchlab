@@ -24,11 +24,11 @@ We don't perform the feature extraction as such, but start from available databa
 
 Here we try to replicate the main results (tables and figures) of the seminal Peterson and Barney 1952 paper.
 
-2. **[Pitch Distribution (Hillenbrand Database)](https://compi1234.github.io/spchlab/HTML/PitchDistributions.html)**
+2. **[Pitch Distribution (Hillenbrand Database)](https://github.com/compi1234/spchlab/blob/main/HTML/PitchDistribution.html)**
 
 provides histograms of average pitch for different classes: male, female, boy, girl and a simple Gaussian fit
 
-3. **[Formant Distribution (Hillenbrand Database)](https://compi1234.github.io/spchlab/HTML/FormantDistributions.html)**
+3. **[Formant Distribution (Hillenbrand Database)](https://github.com/compi1234/spchlab/blob/main/HTML/FormantDistribution.html)**
 
 provides different views on the distribution of formant values (mainly F1 and F2) as measured in the Hillenbrand database.
 This analysis shows well how F1-F2 clusters are well separate for a small number of vowels, but also how much overlap there is when including all vowels.
