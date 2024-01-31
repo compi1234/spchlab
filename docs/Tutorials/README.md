@@ -1,7 +1,7 @@
 # spchlab - Tutorials
 
-Here you find an overview of short knowledge clips presented in tutorial notebooks and saved .html.
-For access to the notebooks directly, to the [spchlab repository](https://github.com/compi1234/spchlab/tree/main) 
+Here you find an overview of short knowledge clips presented in tutorial notebooks and saved in .html.
+For access to the notebooks directly, go to the [spchlab repository](https://github.com/compi1234/spchlab/tree/main) 
 
 ### LAB00 - Introduction
 
@@ -23,11 +23,14 @@ For access to the notebooks directly, to the [spchlab repository](https://github
 - [Hillenbrand Pitch](PitchDistribution.html)
 - [Hillenbrand Formants](FormantDistribution.html)
 
-### LAB04 - Bayes
+### LAB04 - Feature Extraction
+
+- [FeatureExtraction](FeatureExtraction.html)
+
+
+### LAB05 - Bayes
 
 - [StandardNormalDistribution](StandardNormalDistribution.html)
-
-### LAB05 - Feature Extraction
 
 
 ### LAB06 - Frame Classification

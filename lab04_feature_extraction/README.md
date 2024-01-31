@@ -1,16 +1,20 @@
 #  LAB04:  Feature Extraction for Speech Recognition
 
 
-## Background
 
 Frame based speech analysis extracts features on a frame by frame basis.  Best known example is the spectrogram, which is just a stacking of short time spectra computed over successive frames.   Fourier style spectral analysis is often just a first step and is followed by mel-spectral or cepstral processing.
 
 Apart from spectral analysis, there are also a number of features that may be computed from the signal directly, most notably: energy, pitch and zero-crossing rate.
 
+## Tutorials
+
+**[FeatureExtraction](https://compi1234.github.io/spchlab/Tutorials/FeatureExtraction.html)**   
+This tutorial illustrates two mainstream feature extraction methods applied in speech recognition:
+(i) mel-spectrogram and (ii) Mel Frecquency Cepstral Features (MFCCs).
 
 ## Exercises
 
-**Ex.1 Time Domain Feature Extraction** (TimeDomainFeatures.ipynb)
+**[Ex.1 Time Domain Feature Extraction](TimeDomainFeatures.ipynb)**
 
 
 This exercise focuses on energy and pitch and the influence of window length and shift.  The results are straightforward to interpret when thinking about the role of pitch in the source-filter model. By and large we reach the same conclusions as for spectral analysis. 
@@ -18,7 +22,7 @@ This exercise focuses on energy and pitch and the influence of window length and
 In the second task we apply the results to construct an endpointing and trimming tool.  We use frame based energy as feature and combine it with simple heuristics to create a trimming tool that cuts silence at the edges of a recording.
 
 
-**Ex.2 CepstralLiftering** (CepstralLiftering.ipynb)
+**[Ex.2 CepstralLiftering](CepstralLiftering.ipynb)**
 
 This exercise demonstrates the magic of cepstral liftering to separate spectral envelope from pitch information in an automatic way.
 
