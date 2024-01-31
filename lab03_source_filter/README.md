@@ -28,7 +28,7 @@ Here we try to replicate the main results (tables and figures) of the seminal Pe
 
 provides histograms of average pitch for different classes: male, female, boy, girl and a simple Gaussian fit
 
-3. **[Formant Distribution (Hillenbrand Database)](https://compi1234.github.io/spchlab/Tutorials/HTML/FormantDistribution.html)**
+3. **[Formant Distribution (Hillenbrand Database)](https://compi1234.github.io/spchlab/Tutorials/FormantDistribution.html)**
 
 provides different views on the distribution of formant values (mainly F1 and F2) as measured in the Hillenbrand database.
 This analysis shows well how F1-F2 clusters are well separate for a small number of vowels, but also how much overlap there is when including all vowels.
@@ -48,7 +48,7 @@ See if you can determine gender and/or vowel identity from your extracted values
 + SpgR-Ex.2: Extracting pitch and formants from the mel spectrum
 
 
-2. **[FormantDistributions](FormantDistribution.ipynb)**
+2. **[FormantDistribution.ipynb](FormantDistribution.ipynb)**
 
 This notebook contains plenty of plots.  Focus on the last couple of plots showing gender dependent distributions of F1-F2 and showing higher dimensional data
 in a grid plot in where f0
