@@ -18,8 +18,8 @@ For accessing the **notebooks**, follow the link to the correct LAB-folder.
 - [LAB01: Speech and Audio](lab01_speech_audio/)
 - [LAB02: The Spectrogram](lab02_spectrogram/)
 - [LAB03: The Source Filter Model](lab03_source_filter/)
-- [LAB04: Bayesian Classification](lab04_bayes/)
-- [LAB05: Feature Extraction](lab05_feature_extraction/)
+- [LAB04: Feature Extraction](lab04_feature_extraction/)
+- [LAB05: Bayesian Classification](lab05_bayes/)
 - [LAB06: Frame Classification using GMMs and DNNs](lab06_classification/)
 - [LAB07: Dynamic Time Warping](lab07_dtw/)
 - [LAB08: Hidden Markov Models](lab08_hmm/)
@@ -27,5 +27,5 @@ For accessing the **notebooks**, follow the link to the correct LAB-folder.
 
 ### Tutorial Notebooks
 
-All executed tutorial notebooks have been saved [here](HTML/README.md)
+The output of the tutorial notebooks may be found [here](https://compi1234.github.io/spchlab/Tutorials)
 
