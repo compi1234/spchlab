@@ -40,7 +40,10 @@ For access to the notebooks directly, go to the [spchlab repository](https://git
 
 - [Dynamic Time Warping](DynamicTimeWarping.html)
 
-### LAB08 - Hidden Markov Models Part-1
+### LAB08 - Hidden Markov Models Part-1 (Concepts and Algorithms)
 
+- [HMM Discrete Densities](hmm_examples_discrete.html)
+- [HMM GMMs - I](hmm_examples_gauss1.html)
+- [HMM GMMs - II](hmm_examples_gauss2.html)
 
 ### LAB09 - Hidden Markov Models Part-2

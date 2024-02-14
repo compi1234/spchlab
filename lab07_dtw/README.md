@@ -2,7 +2,7 @@
 
 ## Tutorials
 
-**[DynamicTimeWarping](https://compi1234.github.io/spchlab/Tutorials/PDynamicTimeWarping.html)** 
+**[DynamicTimeWarping](https://compi1234.github.io/spchlab/Tutorials/DynamicTimeWarping.html)** 
 
 A tutorial notebook with examples with scalar data, multidimensional data and real speech data.
 
