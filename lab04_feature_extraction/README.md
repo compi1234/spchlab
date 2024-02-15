@@ -30,7 +30,7 @@ This exercise demonstrates the magic of cepstral liftering to separate spectral 
 
 **Ex.3 MelSpectrogram**
 
-Hereunder we list a number of exercises related to the mel spectrum, that may have been executed before or the can be done as one group at this point.
+Hereunder we list a number of exercises related to the mel spectrum, that you may have done before or that can be done as one group at this point.  The relevant notebooks are either in ../lab02 or in ../lab03
 - lab02/Filt-Ex.2 : Revisit your answers to this exercise (on bandpass and bandstop filtering of speech) from the previous session and remotivate (or adjust) your answers based on the mel frequency concept.
 - lab02/Melspec-Ex.1:
     + motivating the mel spectrogram
