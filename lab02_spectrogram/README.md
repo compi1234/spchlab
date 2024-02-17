@@ -4,16 +4,16 @@
 ## Tutorials
 
 1. **Spectrogram**
-\( [HTML](https://compi1234.github.io/spchlab/HTML/Spectrogram.html) \) 
+\( [HTML](https://compi1234.github.io/spchlab/Tutorials/Spectrogram.html) \) 
 
 shows how a spectrogram is the result of the sliding window appoach and the computation of short-time Fourier Spectra.
 
-2. **MelScale**   \(  [HTML](https://compi1234.github.io/spchlab/HTML/MelScale.html) \)  
+2. **MelScale**   \(  [HTML](https://compi1234.github.io/spchlab/Tutorials/MelScale.html) \)  
 
 discusses the design of the mel scale in a number of different variants.
 It also shows how to design a mel scaled filterbank that is used to convert a Fourier Spectrogram into a mel spectrogram
 
-3. **MelSpectrogram** \(  [HTML](https://compi1234.github.io/spchlab/HTML/MelSpectrogram.html) \)
+3. **MelSpectrogram** \(  [HTML](https://compi1234.github.io/spchlab/Tutorials/MelSpectrogram.html) \)
    
 shows how we transform a traditional Fourier spectrogram into a mel spectrogram using mel scaled filterbanks.
 
