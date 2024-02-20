@@ -1,9 +1,11 @@
-# LAB04: Bayesian Classification using a Generative Model
+# LAB05: Bayesian Classification using a Generative Model
 
 
 ## Background
 
-- [Bayesian Classification](Bayes.md)  gives a brief refresh on Bayes formula and its application in classification problems.   It also introduces Gaussian Mixture models (GMMs) as universal probability density approximators. (skip if you know it)
+
+1. **[Peterson Barney](https://compi1234.github.io/spchlab/Tutorials/PetersonBarney.html)**
+2. **[Bayesian Classification](https://compi1234.github.io/spchlab/Tutorials/Bayes.md)**  gives a brief refresh on Bayes formula and its application in classification problems.   It also introduces Gaussian Mixture models (GMMs) as universal probability density approximators. (skip if you know it)
 
 - [Standard Normal Distribution](StandardNormalDistribution.ipynb) can be used to view the standard normal distribution
 

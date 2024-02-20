@@ -30,6 +30,7 @@ For access to the notebooks directly, go to the [spchlab repository](https://git
 
 ### LAB05 - Bayes
 
+- [Bayesian Classification](Bayes.md)
 - [Standard Normal Distribution](StandardNormalDistribution.html)
 
 

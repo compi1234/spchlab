@@ -48,7 +48,8 @@ See if you can determine gender and/or vowel identity from your extracted values
 + SpgAna-Ex.2: Extracting pitch and formants from the mel spectrum
 
 
-2. **[FormantDistribution.ipynb](FormantDistribution.ipynb)**
+2. **Bayesian Recognition using Pitch and Formants as Features**
+3. [FormantDistribution.ipynb](FormantDistribution.ipynb)**
 
 This notebook contains a collection of plots.  Focus on the last couple of plots showing gender dependent distributions of F1-F2 and showing higher dimensional data
 in a grid plot including f0 as well
