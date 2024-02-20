@@ -3,30 +3,17 @@
 
 ## Background
 
+- The notebook **[Bayesian Classification](Bayes.md)**  gives a brief refresh on Bayes formula and its application in classification problems.   
 
-1. **[Peterson Barney](https://compi1234.github.io/spchlab/Tutorials/PetersonBarney.html)**
-2. **[Bayesian Classification](https://compi1234.github.io/spchlab/Tutorials/Bayes.md)**  gives a brief refresh on Bayes formula and its application in classification problems.   It also introduces Gaussian Mixture models (GMMs) as universal probability density approximators. (skip if you know it)
-
-- [Standard Normal Distribution](StandardNormalDistribution.ipynb) can be used to view the standard normal distribution
-
-## Exercises
-
-Within these exercises we make use of the "Generative, Bayesian" Framework in which the data is modeled  by a simple Gaussian  Distribution or Mixture of Gaussians distribution.
-By using psycho-acoustic features such as pitch and formants we can keep the number of features very small (1 to 3).
-
-The different exercises all make use of the same paradigm and apply it to gradually more complex situations by increasing the dimensionality of the features and increasing the number of classes.
-
-The work involves: data processing, data exploration, data modeling, building the classifier, testing the classifier.
-
-
-
-
-- in lab03_source_filter  you looked at the distributions of pitch and formants in an exploratory way
+- **Standard Normal Distribution [\[HTML\]](https://compi1234.github.io/spchlab/Tutorials/StandardNormalDistribution.html)  [\[notebook\]](StandardNormalDistribution.ipynb)** can be used to review the standard normal distribution or plain to do lookup of values
 
 
 ##### Exercises
 
-- [Hillenbrand-1.ipynb]   Gender Classification with Pitch as Feature
+- **Gender Classification with Pitch as Feature**
+   + Use your pitch measurements from lab03 to come up with a probabilistic answer if the person speaking was male or female.   ALL NECESSARY computations are easily done by hand. Make use of the graphs that you find in [Hillenbrand Pitch Distributions](https://compi1234.github.io/spchlab/Tutorials/PitchDistribution.html)
+   + Now, verify your results in the notebook [Pitch2Gender.ipynb](Pitch2Gender.ipynb)   
 
-- [Hillenbrand-2.ipynb]   Vowel Classification with Formant Features
+- **Vowel Classification using Formants as Features**
+   + Use your formant measurements from lab03  and use them in [Formants2Vowel.ipynb](Formants2Vowel.ipynb) 
 

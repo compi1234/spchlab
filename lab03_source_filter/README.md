@@ -48,12 +48,18 @@ See if you can determine gender and/or vowel identity from your extracted values
 + SpgAna-Ex.2: Extracting pitch and formants from the mel spectrum
 
 
-2. **Bayesian Recognition using Pitch and Formants as Features**
-3. [FormantDistribution.ipynb](FormantDistribution.ipynb)**
+2. **Classifying using Pitch and Formants as Features using scatter plots and simple models**
 
-This notebook contains a collection of plots.  Focus on the last couple of plots showing gender dependent distributions of F1-F2 and showing higher dimensional data
-in a grid plot including f0 as well
+a. Use your pitch estatimate(s) from Exercise 1 to classify the speaker as adult male, adult female, boy or girl using the statistics estimated in **[Pitch Distribution (Hillenbrand Database)](https://compi1234.github.io/spchlab/Tutorials/PitchDistribution.html)**.  Express the classification rule that you use in words.
 
-+ FmtDist-Ex.1: Could you have predicted the gender dependent formant distributions from looking at the f0-F1-F2 grid plot ?
+b. Use your formant estatimate(s) from Exercise 1 to recognize the observed vowel using the statistics estimated in **[Formant Distribution (Hillenbrand Database)](https://compi1234.github.io/spchlab/Tutorials/FormantDistribution.html)**
+
+c. For the vowel recognition task: can you make the result less ambiguous if you can use the result from experiment 2.a (Gender Recognition) 
+ 
+
+3. **Bayesian Classification**
+
+Next we want to formalize the classification tasks above in a Bayesian framework.
+For this we refer to the first exercises in lab05_bayes
 
 
