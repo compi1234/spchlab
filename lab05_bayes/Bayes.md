@@ -9,8 +9,8 @@ The general approach lies in constructing *discriminant functions* $f(C|x)$ and 
 
 ### Bayes Rule
 
-A popular and simple implementations of a discriminant function is Bayes decision rule with a solid founding in statistics.
-It states that the *posterior probabilities* $P(C|x)$ can serve as discriminant functions and is even optimal under mild conditions.
+A popular and simple implementation of a discriminant function is Bayes decision rule with a solid foundation in statistics.
+It states that the *posterior probabilities* $P(C|x)$ can serve as discriminant function and is even optimal under mild conditions.
 
 Thus, our decision rule is finding the maximum of the posterior probabilities over all classes 
 $$
@@ -22,12 +22,12 @@ P(C|x) = \frac{p(x|C) \times P(C)}{ p(x) }
 $$
 
 in which:
-- $x$ is a D-Dimensional feature Vector
-- $C$ is a class label or index
+- $x$ is a feature Vector
+- $C$ is a class label
 - $P(C|x)$ is the (posterior) probabilty for Class $C$ given feature vector $x$
 - $p(x|C)$ is the feature distribution of feature vector $x$ for class $C$   (Note: in discrete density models $p(x|C)$ is a probability and not a density)
 
-Interestingly thus, Bayes rule does not only classify but gives us also an indication of the accuracy that we can expect for our decision.
+Remark that the posterior probabilities in Bayes rule not only allow for classification but also give a measure for the accuracy of our decision.
 
 
 ### Bayesian Classification in practice
@@ -37,7 +37,7 @@ Often we will use a parametrical distribution in which the density estimation tr
 
 ***TRAINING PHASE***
 1. Collect the training data   
-2. Define the distribution model
+2. Choose the model of the distributions
 3. For each class: Estimate model parameters from the training data
 
 
@@ -49,10 +49,10 @@ Often we will use a parametrical distribution in which the density estimation tr
 5. Compute the posteriors: $ P(C|x) $
 6. Take the maximum over the posteriors
 
-Note: The total likelihood of the sample is just a normalization factor guaranteeing that the posteriors sum up to 1.0.  This step is not necessary for classification only, but inspecting the posteriors it is often a good sanity check on your result.
+Note: The total likelihood of the sample is just a normalization factor guaranteeing that the posteriors sum up to 1.0.  This step is not necessary for classification as such, but inspecting the posteriors is often a good sanity check on your result.
 
 
-### Limitations for Bayesian Classification
+### Optimality and Limitations for Bayesian Classification
 
 Bayes decision rule will be optimal (i.e. no better decision rule can be constructed!!) under following conditions:
 - you need enough (correctly) labeled training data such that you can estimate class distributions $p(x|C)$ using maximum likelihood estimation
@@ -60,20 +60,20 @@ Bayes decision rule will be optimal (i.e. no better decision rule can be constru
 - you should use Bayes rule (about conditional probabilities) to compute the posterior probabilities
   
 These conditions look mild at first sight.  However, experience has taught us that the Bayesian approach has significant limitations for complex problems.
-The central issue is the estimation of the class densities $p(x|C)$.  For real life data such densities will not have a simple shape like Gaussian or binomial for which maximum likelihood estimation has a straightforward solution.
-On the contrary more often than not we need to make use of so called universal approximators such as Gaussian Mixture Models (GMMs).   These mixture distributions are approximate at best and a maximum likelihood estimation may only be approximated in a hill climbing matter with no guarantee for a global optimization.
+The central issue is the estimation of the class densities $p(x|C)$.  For real life data such densities will not conform to a simple shape like Gaussian or binomial for which maximum likelihood estimation has a straightforward solution.
+On the contrary more often than not we need to make use of so called universal approximators such as Gaussian Mixture Models (GMMs).   These mixture distributions are approximate at best and a maximum likelihood estimation may only be approximated in a hill climbing manner with no guarantee for a global optimization.
 
-This is not a shocking observation by itself.  One question is how good are those approximate estimates and should we be concerned.  But even more: how much better do our estimates get, and consequently the decision rule, with increasing amounts of data.   The truth is, improvement is inherently slow with increasing amounts of data.
+This is not a shocking observation by itself.  The question is how good are those approximate estimates and should we be concerned.  But even more: how much better do our estimates get, and consequently the decision rule, with increasing amounts of data.   The truth is, improvement is inherently slow with increasing amounts of data.
 
-Looking at the formulas in detail gives us insight an inherent underlying problem.
-For a sample that scores high on one class and not on the others, there will be no no problem; small errors in the estimated probabilities will not influence the outcome.   But for outliers, i.e. samples that aren't modeled well by any of the classes, there is a fundamental problem.   All class densities $p(x|C)$ are very small in this case. The challenge is thus to discrimate between very very small on one class vs. extremely small on another class.  Estimating $\epsilon$-small numbers will never be easy and comparing many of them is even more challenging.
-Another way of looking at this: the posterior is computed by a 0/0 division !!!
-This contrasts strongly with the fact amognst the posteriors $P(C|x)$ there must at least be a few numbers that are finite and meaningfull.
+Looking at the formulas in detail gives us insight into the inherent underlying problem.
+For a sample that scores high on one class and not so high on the others, there will be no no problem; small errors in the estimated probabilities will not influence the classification outcome.   But for outliers, i.e. samples that aren't modeled well by any of the classes, there is a fundamental problem.   All class densities $p(x|C)$ are very small in this case. The challenge is thus to discrimate between *very very small* on one class vs. *extremely small* on another class.  Estimating $\epsilon$-small numbers will never be easy and comparing many of them is even more challenging.
+Another way of looking at this: the posterior computation is based on  a 0/0 division !!!
+This contrasts strongly with the fact at least one of the posteriors $P(C|x)$ must be finite. ... unless the outlier doesn't really belong to any class and you forgot to include and/or model such dummy outsider class.
 
 
 ### Generative vs. Discriminative models
 
-In the case of the Bayesian approach use a **Generative** model: we estimate the model distributions (i.e. a model that can generate artificial data).
+In the case of the Bayesian approach we use a **Generative** model: i.e. we estimate the model distributions (i.e. a model that can generate artificial data).
 The **discriminant** functions are computed indirectly from the **generative** model.
 
 Modern **Deep Neural Nets** are **Discriminative** models as they estimate the discriminant functions directly by minimizing the classification error on a given train set (or optimize another criterion that is directly related to classification).  Often it is the case the discriminant functions are normalized and that they can be interpreted as posteriors.
@@ -84,22 +84,25 @@ Generative and discriminative models each have a number of advantages and disadv
 This optimization will inherently be an order of magnitude more complex than in the case of a generative model.
 - Given the higher complexity, discriminative models will at the same time need and also benefit from a large training corpus, again pushing the computational requirements up.
 
-In summary **Generative Models** can be trained quickly with small amounts of data and may be the way to go in the case of limited resources, inherently sparse data problems, prototyping, ...   **Discriminative Models** are superior when large representative data sets are available for your problem.   They may also be the methodology of choice if adapatation or fine tuning is an option in which some large background model can serve as reference.
+In summary **Generative Models** can be trained quickly with small amounts of data and may be the preferred solution in the case of limited resources, inherently sparse data problems, prototyping, ...   **Discriminative Models** are superior when large representative corpora  are available for your problem.   They may also be the methodology of choice if adapatation or fine tuning is an option in which some large background model can serve as reference.
 
 
 
 
 ### Gaussian Mixtures as universal approximators
 
-$$ p(x|C_k) = \sum_{j=1}^{M} w_{ij} \mathcal{N}(x;\mu_{kj},\Sigma_{kj}) 
+$$ 
+p(x|C_k) = \sum_{j=1}^{M} w_{ij} \mathcal{N}(x;\mu_{kj},\Sigma_{kj}) 
 $$
 in which$\mathcal{N}_{kj}$ is the $j$-th mixture of Class $C_k$
 parameterized by $ w_{kj}, \mu_{kj}, \Sigma_{kj}$, respectively the weight, mean and convariance matrix.   Without any constraint on the parameters, these functions are also known as Radial Basis Functions.   In the probabilistic literature GMMs are used as probability density functions.  This merely requires that the weights sum up to 1.
 
 The parameters of a single Gaussian are easily estimated from example data using the maximum likelihood principle.  For the 1D case, yielding:
 $$
-\hat{\mu} & = & \frac{1}{N} \sum_i x_i \\   
-\hat{\sigma^2} & = & \frac{1}{N-1} \sum_i (x_i - \mu)^2
+\hat{\mu} = \frac{1}{N} \sum_i x_i 
+$$
+$$
+\hat{\sigma^2} =\frac{1}{N-1} \sum_i (x_i - \mu)^2
 $$
 
 Estimating parameters of a Gaussian Mixture model from data is more involved and only approximate.  The *EM* (Estimation-Maximization)* algorithm finds a local optimum in an iterative way.
