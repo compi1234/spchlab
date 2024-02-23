@@ -32,6 +32,6 @@ Hereunder we list a number of exercises related to the mel spectrum, that you ma
 - lab02/Melspec-Ex.1:
     + motivating the mel spectrogram
     + difference between high resolution and critical band mel spectra
-- lab03/SpgR-Ex.2: implications of the mel scale for pitch and formant analysis
+- lab03/SpgAna-Ex.2: implications of the mel scale for pitch and formant analysis
 
 
