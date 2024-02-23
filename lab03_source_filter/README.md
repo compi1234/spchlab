@@ -50,16 +50,14 @@ See if you can determine gender and/or vowel identity from your extracted values
 
 2. **Classifying using Pitch and Formants as Features using scatter plots and simple models**
 
-a. Use your pitch estatimate(s) from Exercise 1 to classify the speaker as adult male, adult female, boy or girl using the statistics estimated in **[Pitch Distribution (Hillenbrand Database)](https://compi1234.github.io/spchlab/Tutorials/PitchDistribution.html)**.  Express the classification rule that you use in words.
-
-b. Use your formant estatimate(s) from Exercise 1 to recognize the observed vowel using the statistics estimated in **[Formant Distribution (Hillenbrand Database)](https://compi1234.github.io/spchlab/Tutorials/FormantDistribution.html)**
-
-c. For the vowel recognition task: can you make the result less ambiguous if you can use the result from experiment 2.a (Gender Recognition) 
- 
++ SpgAna-Ex.3:   
+    a. Use your pitch estatimate(s) from Exercise 1 to *classify* the speaker as adult male, adult female, boy or girl using the statistics estimated in **[Pitch Distribution (Hillenbrand Database)](https://compi1234.github.io/spchlab/Tutorials/PitchDistribution.html)**.  Use no or minimal computations only to achieve this. Express the classification rule that you used in your own words.   
+    b. Use your formant estatimate(s) from Exercise 1 to recognize the observed vowel using the statistics estimated in **[Formant Distribution (Hillenbrand Database)](https://compi1234.github.io/spchlab/Tutorials/FormantDistribution.html)**.  Explain how you made your decision; again, no computations are required.   
+    c. For the vowel recognition task under (b):  Assume now that you can use the result from experiment 2.a (Gender Recognition) as prior knowledge.  Will this influence your result ?
+  
 
 3. **Bayesian Classification**
 
-Next we want to formalize the classification tasks above in a Bayesian framework.
-For this we refer to the first exercises in lab05_bayes
+You will work further on the same task in a more formal Bayesian framework in lab05_bayes.  So keep your measurements and preliminary classification results for future reference.
 
 
