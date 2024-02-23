@@ -16,10 +16,7 @@ This tutorial illustrates two mainstream feature extraction methods applied in s
 
 **[Ex.1 Time Domain Feature Extraction](TimeDomainFeatures.ipynb)**
 
-
 This exercise focuses on energy and pitch and the influence of window length and shift.  The results are straightforward to interpret when thinking about the role of pitch in the source-filter model. By and large we reach the same conclusions as for spectral analysis. 
-
-In the second task we apply the results to construct an endpointing and trimming tool.  We use frame based energy as feature and combine it with simple heuristics to create a trimming tool that cuts silence at the edges of a recording.
 
 
 **[Ex.2 CepstralLiftering](CepstralLiftering.ipynb)**
