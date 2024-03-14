@@ -28,7 +28,7 @@ It also includes examples of warping identical sentences spoken by different spe
 *notebook:* [DTW_ex.ipynb](DTW_ex.ipynb)
 
 - Exercise 1: DTW on 1-dimensional feature vector sequence
-- Exercise 2: Using different warping constraints
+- Exercise 2: DTW Using different warping constraints
 
 
 #### DTW on speech data
