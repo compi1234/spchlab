@@ -46,14 +46,17 @@ It is meant for students who want to familiarize themselves with a few concepts 
 
 
 #### TIMIT-3   GMM Training
-
-In TIMIT-3 we work with the whole TIMIT database and train and evaluate a number of different models
+**Notebook: timit-3.ipynb**
+In TIMIT-3 we work with the whole TIMIT database and train and evaluate a number of different models.
+To a large extent, this notebook is a continuation of TIMIT-1.  However, by using much more data
+we can better evaluate real life performance, effect of database size, ...
 
 
 #### TIMIT-4   GMM vs DNN
-
+**Notebook: timit-4.ipynb**
 In this notebook we compare GMM and DNN frame based output for speech utterances.
-
+The latter part of the notebook contains test results; there is no need to run these again except
+for verification.
 
 
 #### GMM-M-F (DEMO):  Utterance Classification with GMMs
