@@ -52,7 +52,3 @@ This exercise CAN be done by hand but involves quite a few computations.
 You can also track it in the notebook and do a few computations.  
 However, try to answer each of the questions as you progress and without looking ahead !!
 
-
-## Exercise III - Recognizing speech with HMMs
-
-... coming ...

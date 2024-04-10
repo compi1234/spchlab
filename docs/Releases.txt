@@ -1,0 +1,9 @@
+TBD
+
+- separate mel-scale as concept from mel-scale filterbank implementation
+the pyspchoacoustic experiments only require the concept; the FB implementation fits in the feature_extraction exercises
+
+- timit1 & timit3 can be further integrated
+  a. feature extraction + GMM on mfcc13, mel24, mel80
+  b. add delta's
+  c. MLP
