@@ -22,10 +22,10 @@ For accessing the **notebooks**, follow the link to the correct LAB-folder.
 - [LAB05: Bayesian Classification](lab05_bayes/)
 - [LAB06: Frame Classification using GMMs and DNNs](lab06_classification/)
 - [LAB07: Dynamic Time Warping](lab07_dtw/)
-- [LAB08: Hidden Markov Models](lab08_hmm/)
-
+- [LAB08: Hidden Markov Model Computations](lab08_hmm1/)
+- [LAB09: Hidden Markov Model for Speech](lab09_hmm2/)
 
 ### Tutorial Notebooks
 
-All executed tutorial notebooks via github pages [here](https://compi1234.github.io/spchlab/Tutorials)
+The output of the tutorial notebooks may be found [here](https://compi1234.github.io/spchlab/Tutorials)
 
