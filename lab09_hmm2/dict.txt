@@ -1,13 +1,19 @@
 a         ah
-alternitve ao l cl t er n ah cl t ih v
+alternitve ao l t er n ah t ih v
 an        ae n
 are       aa r
 beach     b iy ch
-bricks    b r ih cl k s
-computer  k ah m cl p y uw cl t er 
-computers k ah m cl p y uw cl t er z
-eight     ey cl t
+bricks    b r ih k s
+Brits     b r ih t s
+compute   k ah m p y uw t 
+computer  k ah m p y uw t er 
+computers k ah m p y uw t er z
+dive      dh ay v
+the       dh ah
+eight     ey t
 five      f ay v
+foolish   f uw l ih sh
+for       f ao r
 four      f ao r
 friendly  f r eh n cl d l iy
 human     hh y uw m ah n
@@ -16,13 +22,17 @@ me        m iy
 nice      n ay s
 nine      n ay n
 one       w ah n
+reasons   r iy z ah n z
 recognize r eh cl k ah cl g n ay z
+seemed    s iy m d
 seven     s eh v ah n
+sil       sil
 six       s ih cl k s
 speech    s cl p iy ch
 systems   s ih s cl t ah m z
 ten       t eh n
 the       dh ah
+this      dh ih s
 three     th r iy
 to        t uw
 two       t uw

@@ -1,37 +1,46 @@
-# LAB00: Using and Installing *spchlab* 
+# LAB00: Introduction to *spchlab* 
 
-The notebooks have been developed and tested on *Google Colab*, *Windows 10/11* and *MacOS*.  Early 2024, Colab uses Python 3.10 and this would thus be the preferred installation platform.
+### What is spchlab ?
+*spchlab* is a collection of notebooks for teaching and experimenting with speech understanding, speech processing and speech recognition.
+*spchlab* uses primarily python as a programming language is and is available on github **https://github.com/compi1234/spchlab**
 
-Generally speaking we expect the code to run on platforms supporting Python 3.8, 3.9 and 3.10 (higher also, but not tested)
+*spchlab* is divided in a number of ***labs*** that group a number of notebooks on one specific topic such as **lab02_Spectrogram**, **lab06_Classification**, **lab07_Hidden Markov Models**, ...
+Within each ***lab*** you will find both ***Tutorial*** and ***Exercise*** Notebooks.
+The README file contains a short description of all material in the lab-folder.
 
-Additional information on getting started with Google Colab is found [here](COLAB.md).   
+Most students will use *spchlab* in the **Google Colab** environment. If you are not familiar with Google Colab you should read the following first:  **[Introduction to Colab](COLAB.md)**.
 
+###  Use of *spchlab* in  H02A6A
+*spchlab* is extensively used in the KULeuven course H02A6A on speech recognition and was originally developed for that course.
+However, students should be aware that the current version of *spchlab* goes broader and contains quite a bit of extra material, in the form of extra Tutorials or exercises on topics that are not covered in the current version of the course.
 
-### First Time Usage
+### Running your first notebook in *spchlab*
 
-*spchlab* is divided in a number of topical lab sessions .
-For each of the labs start with the README.
-This will contain a short description of Tutorials and the Exercises that are available in the lab-folder.
-
-As a first notebook, we suggest to run  **Segmentations.ipynb** in this folder.  This notebook walks you through the typical structure of a spchlab notebook with plenty of comments:
+As a first notebook, we suggest to run  **Segmentations.ipynb** in this folder.  This notebook walks you through the typical structure of a spchlab notebook with plenty of how-to comments:
 - making sure that the prerequisite package *pyspch* is installed
 - doing all the required/typical imports
 - loading sampled data or other required data
 - running the core of the notebook
 
-In this introductory notebook we show how to access demo samples, listen to them and align them with provided transcripts
+In this introductory notebook we show how to access demo audio samples, listen to them and align them with provided transcripts
+
+### Some Platform Notes
+
+The notebooks have been developed and tested on *Google Colab*, *Windows 10/11* and *MacOS*.  
+The preferred python version at this moment is Python 3.10, but it is expect to  run on platforms supporting Python 3.8, 3.9 and 3.10 (higher also for most notebooks, but not extensively tested)
 
 
-### Dependencies
+
+#### Dependencies
 *spchlab*  depends on the *pyspch* package.   
-*pyspch* makes use of the mainstream machine learning stack (numpy, pandas, ... ) anf of *librosa* for speech processing   
+*pyspch* makes use of the mainstream machine learning stack (numpy, pandas, ... ) and of *librosa* for speech processing   
 A number of modules (using DNNs) require Pytorch, torchaudio and/or tensorflow
 
 The most notable platform specific dependencies are thus:
 - AUDIO: anything relating to AUDIO I/O tends to be hardware and platform dependent
-- CUDA: Some notebooks rely on pytorch and torch audio and have been tested in a CUDA environmnet;  CUDA is not available on MAC and hence these notebooks need to be run in a CPU-only version. 
+- CUDA: Some notebooks rely on pytorch and torch audio and have been tested in a CUDA environmnet;  CUDA is not available on MAC and hence these notebooks need to be run in a CPU-only version, making them potentially slower.
 
-### Running on your own PC ?
+#### Running on your own PC ?
 
 If you want to run these notebooks outside the Google Colab environment, e.g. on your own PC,  make sure to install the **pyspch** package (available in github/compi1234/pyspch).  
 
