@@ -2,6 +2,7 @@
 .ipynb*
 .ipynb*/*
 */animations
+*/old
 dev
 convert_to_html.*
 */*checkpoint*
