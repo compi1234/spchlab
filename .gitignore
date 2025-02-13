@@ -2,6 +2,9 @@
 .ipynb*
 .ipynb*/*
 */animations
+*/old
+*/old/*
 dev
 convert_to_html.*
 */*checkpoint*
+/lab09_hmm2/old
