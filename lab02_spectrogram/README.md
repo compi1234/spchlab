@@ -30,13 +30,16 @@ Filtering an audio signal, i.e. removing part of the frequency spectrum,  has an
 + Spec-Ex.1: Phonetic Segmentations
 + Spec-Ex.2: Fourier Spectrogram: parameters
 
-A spectrogram is a time-frequency representation. It sounds generic, but different parameter settings give different tradeoffs and may give a very different 'view'.
+(Ex.1) Overlaying phonetic segmentations on a speech spectrogram illustrates the discrepancy that exists between the continuity of
+the speech signal and the discreteness of any symbolic (graphemic or phonetic) representation.  Phonetic boundaries
+tend to be fluid rather than abrupt.
+
+(Ex.2) A spectrogram is a time-frequency representation. However, different parameter settings may lead to different interpretations of what we see in the spectrogram.   As a default we use established default parameters that are in accordance with the human auditory system and that work well in speech processing.  
+However, different parameter settings give different tradeoffs and may give a very different 'view'.
 Discover for yourself the Heisenberg uncertainty principle of spectral analysis and find those parameters that best aligns
 the spectrographic view with perception in general.
 
-Overlaying phonetic segmentations on a speech spectrogram illustrates well that there is a discrepancy between the continuity of
-the speech signal and the discreteness of any symbolic (grapheme or phonetic) representation.  Phonetic boundaries
-are more often than not fluid instead of abrupt.
+
 
 **[MelSpectrogram.ipynb](MelSpectrogram.ipynb)** :   
  + MelSpec-Ex.1: Mel Spectrogram - Answer the questions at the end of the Tutorial notebook
