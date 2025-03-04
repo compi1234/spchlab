@@ -14,7 +14,7 @@ It also includes examples of warping identical sentences spoken by different spe
 
 ### String Matching
 
-*notebook:* [Levenshtein_ex.ipynb](Levenshtein_ex.ipynb)
+*notebook:* [ex-Levenshtein1.ipynb](ex-Levenshtein1.ipynb)
 
 - Exercise 1: Computing the Levenshtein Distance
     + do the exercise for one of the suggested word pairs
@@ -25,14 +25,11 @@ It also includes examples of warping identical sentences spoken by different spe
 
 ### DTW on scalar data
 
-*notebook:* [DTW_ex.ipynb](DTW_ex.ipynb)
+*notebook:* [ex-dtw.ipynb](ex-dtw.ipynb)
 
 - Exercise 1: DTW on 1-dimensional feature vector sequence
 - Exercise 2: DTW Using different warping constraints
 
 
-#### DTW on speech data
-
-... coming soon ...
 
 
