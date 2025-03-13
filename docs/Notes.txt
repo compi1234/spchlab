@@ -1,0 +1,14 @@
+
+- timit1 & timit3 can be further integrated
+  a. feature extraction + GMM on mfcc13, mel24, mel80
+  b. add delta's
+  c. MLP
+
+- links, figures, assets, ...
+the only reliable linking to figures is by putting them in the docs/assets directory
+and then in Markdown refer to them as
+<div>
+<img src="https://compi1234.github.io/spchlab/assets/tutorial_icon.jpg">
+</div>
+this works for most .jpg files, but not for all and in general not for .png files
+-- can't figure this all out
